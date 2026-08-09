@@ -1,0 +1,12 @@
+<section anchor="sect-2-3">
+   <name>Last Call Control</name>
+     <t>A Chair or Area Director <bcp14>SHALL NOT</bcp14> be permitted to:</t>
+     <ul>
+       <li><t>Initiate a Working Group Last Call while another
+         Last Call is active in this Working Group</t></li>
+         <li><t>Initiate any new Last Calls within the Working 
+         Group while any document in that Working Group 
+         remains in the <strong>IESG OK - Review done, WG action 
+         required</strong> state.</t></li>
+      </ul>
+  </section>

@@ -1,0 +1,46 @@
+    
+  <section anchor="sect-4-2">
+  <name>IAB Level</name>
+   <t>The architectural and procedural clearance stream under the jurisdiction 
+   of the Internet Architecture Board (IAB) <bcp14>SHALL</bcp14> enforce a deterministic, 
+   linear state machine. This high-level governance structure strictly isolates 
+   the contituinal final approval from the operational production 
+   mechanisms of the IESG Level specified in <xref target="sect-4-1" />.</t>
+
+   <t>Unlike the operative pipeline, the IAB workflow <bcp14>SHALL NOT</bcp14> inherit 
+   volatile technical review states. Instead, the Datatracker <bcp14>SHALL</bcp14> programmatically 
+   restrict the IAB stream to architectural verification, structural consultation 
+   metrics, and unalterable final publishing clearances. The following granular 
+   states <bcp14>SHALL</bcp14> be instated:</t>
+      <ul>
+        <li><t><strong>IAB QUE - Queued for process validation:</strong> This state <bcp14>SHALL</bcp14> be
+            set when the IESG sent a process validation request. The state <bcp14>SHALL</bcp14>
+            be set automaticly after the request has been placed in the queue.</t></li>
+        <li><t><strong>IAB ACK - Acknowledged:</strong> This state <bcp14>SHALL</bcp14> be set manually only by the chair
+            or any chair-authorized member. This state <bcp14>SHOULD NOT</bcp14> last longer than 5 business days.</t></li>
+        <li>
+          <t><strong>IAB CON</strong></t>
+          <ul>
+        <li><t><strong>Consultation request recieved from IESG:</strong> This state <bcp14>SHALL</bcp14>
+             be set after the IESG formally requested an IAB consultation.</t></li>
+            <li><t><strong>Consultation scheduled:</strong> This state <bcp14>SHALL</bcp14> be set when
+                IAB and IESG made am appointment for consultation.</t></li>
+          </ul>
+        </li> 
+    <li>
+          <t><strong>IAB OK</strong></t>
+          <ul>
+            <li><t><strong>Decision made and published:</strong> This state <bcp14>SHALL</bcp14> 
+            freeze the final judgment of the board and <bcp14>SHALL</bcp14> immediately 
+            and permanently commit the unalterable response into the public Datatracker log.</t></li>
+            <li><t><strong>Document sent to IESG for publication:</strong> This state <bcp14>SHALL</bcp14> 
+        activate the executive transfer of the cleared technical or architectural payload back
+        to the operational stream for final printing.</t></li>
+            <li><t><strong>Exceptional process validated, clearance can be granted:</strong> 
+            This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
+        a disputed out-of-band mechanism, formally notifying the IESG that executive 
+        clearance may be executed.</t></li>
+          </ul>
+        </li>
+      </ul>
+    </section>

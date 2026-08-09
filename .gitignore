@@ -1,0 +1,10 @@
+*.txt
+*.html
+*.pdf
+.lock
+.lck
+*.tmp
+*.lock
+*.lck
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+<section anchor="sect-6">
+<name>IESG Requested Actions</name>
+  <t>To safeguard Quality Assurance and Exceptional Process Quality, the 
+  IESG is requested to issue two statements:</t>
+  <ol type="a">
+    <li>
+      <t><strong>Quality Management Requirements</strong></t>
+      <ol type="I">
+        <li><t>describing assurance and process validation criteria,</t></li>
+        <li><t>keeping the statement up to date.</t></li>
+      </ol>
+      <t>Only already piplined documents <bcp14>SHALL</bcp14> be published.</t>
+    </li>
+    <li>
+      <t><strong>Exceptional Process Baseline Requirements</strong></t>
+      <ol type="I">
+        <li><t>defining baseline requirements for exceptional processes
+        and their validation procedures,</t></li>
+        <li><t>keeping the statement up to date.</t></li>
+      </ol>
+        <t>The absolute baseline for these requirements is the direct 
+        comparability to <xref target="I-D.ietf-procon-2026bis" section="8.7" />, 
+        using the operational and consensus principles established in historical
+        precedents such as RFC 8788.</t>
+        <t>On complex topics the <xref target="RFC8788" /> IESG <bcp14>MAY</bcp14> consider consulting the IAB 
+        for process validation.</t>
+    </li>
+  </ol>
+</section>

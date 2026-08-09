@@ -1,0 +1,6 @@
+<section anchor="sect-3-2">
+<name>Normative Splitting</name>
+  <t>After the 30-day timer expires, the RPC <bcp14>SHALL</bcp14> automatically split the cluster. 
+  Documents without normative references on the blocker <bcp14>SHALL</bcp14> be released and 
+  published immediately.</t>
+</section>

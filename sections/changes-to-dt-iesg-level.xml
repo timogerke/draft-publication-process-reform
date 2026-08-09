@@ -1,0 +1,65 @@
+<section anchor="sect-4-1">
+    <name>IESG Level</name>
+      <t>The IESG <bcp14>MAY</bcp14> decide to initiate a parallel dual-review on 
+      complex topics consisting of two isolated entities, where at 
+      least one entity <bcp14>MUST</bcp14> be external. This decision 
+      <bcp14>MUST</bcp14> be formally documented. If all Area Directors
+      assigned to the document are conflicted or unavailable, the model as
+      described above is <bcp14>MUST</bcp14> be applied.</t>
+      <t>Following Datatracker states <bcp14>MUST</bcp14> be instated or renamed:</t>
+      <ul>
+        <li>
+          <t><strong>IESG QUE</strong></t>
+          <ul>
+            <li><t><strong>Queued for acknowledgement:</strong> Set automatically by the system 
+            upon Working Group Chair submission, pending manual acknowledgment.</t></li>
+            <li><t><strong>Queued for review:</strong> Set automatically after acknowledgement,
+            pending reviewing entity assignment.</t></li>
+          </ul>
+        </li>
+        <li><t><strong>IESG ACK - Acknowledged:</strong> Indicates that the document 
+        was recieved has completed formal vlidation (Sanity Check). This state 
+        <bcp14>SHALL NOT</bcp14> last longer than five business days.</t></li> 
+        <li>
+          <t><strong>IESG REV</strong></t>
+          <ul>
+            <li><t><strong>Assigned to reviewing entity:</strong> Indicates that the 
+            uncompromised reviewer entity - or, if triggered by the criteria as
+            defined in <xref target="sect-2-2" />, the parallel internal and external reviewer 
+            entities - has taken formal charge of the ledger, initiating the
+            confidential evaluation period.</t></li>
+            <li><t><strong>Review done, no objections:</strong> Confirms
+            that the collective body has cleared the entity without technical
+            caveats and that all active parallel review metrics show no 
+            unresolved structural variance.</t></li>
+            <li><t><strong>Review done, WG action required:</strong> This state <bcp14>SHALL</bcp14> log
+            a structured list of formal deficiencies within the Datatracker,
+            which <bcp14>SHALL</bcp14> automatically return the docket to the community 
+            for resolution.</t></li>
+            <li><t><strong>WG action verified, no objections:</strong> This state <bcp14>SHALL</bcp14> 
+            document the final and successful collective validation of the
+            working group's delta-revisions against the logged deficiencies.</t></li>
+          </ul>
+        </li>       
+        <li>
+        <t><strong>IESG OK</strong></t>
+        <ul>
+      <li><t><strong>Document ready for publication:</strong>The activation of this 
+          state <bcp14>SHALL</bcp14> programmatically execute the immediate and 
+          irreversible handover of the document object to the RFC Editor Queue.
+          Upon execution, only the RPC <bcp14>SHALL</bcp14> be allowed to make
+          changes to the document.</t></li>
+      <li><t><strong>Process clearance granted:</strong> This state <bcp14>SHALL</bcp14> activate the
+          executive authorization for the requested procedural variance,
+          concluding the IESG-level exceptional review.</t></li>
+        </ul>
+      </li>
+      <li><t><strong>IESG EPR - Exceptional Process requested by WG:</strong> This state <bcp14>SHALL</bcp14>
+      record the transparent import of a working group's formal petition
+      for an out-of-band mechanism outside the scope of <xref target="I-D.ietf-procon-2026bis" />.</t></li>
+   </ul>
+   <t>On complex topics, the IESG <bcp14>MAY</bcp14> consider consulting the IAB for process validation.
+   The IESG <bcp14>SHALL NOT</bcp14> be authorized to disclose the name of the reviewing
+   entity even to the authors.</t>
+   <t>The process validation <bcp14>MUST</bcp14> be done by the IESG.</t>
+</section>

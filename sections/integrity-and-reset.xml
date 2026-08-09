@@ -1,0 +1,21 @@
+<section anchor="sect-3-3">
+  <name>Process Integrity and Automatic Reset</name>
+  <t>Quality assurance <bcp14>MUST</bcp14> be done before Working Group Last Call and 
+  <bcp14>MUST NOT</bcp14> be executed in the AUTH48 or equivalent state. 
+  The RPC is authorized to make editorial changes only.</t>
+
+  <t>To safeguard technical competence, the IESG <bcp14>MUST NOT</bcp14> evaluate or 
+  make decisions for any document or process if both responsible Area 
+  Directors are unavailable. Priority <bcp14>SHOULD</bcp14> be given to consulting 
+  an Area-Advisor to enable the remaining IESG to make a qualified 
+  decision.</t>
+
+  <t>If time permits, consideration of the document or process <bcp14>SHOULD</bcp14> 
+  be deferred to the next scheduled IESG meeting or telechat.</t>
+
+  <t>If both Area Directors remain unavailable, no qualified decision 
+  can be reached via Advisor consultation, or deadlines do not 
+  permit deferral, approval authority <bcp14>MUST</bcp14> be escalated to the 
+  Internet Architecture Board (IAB) to appoint a neutral, 
+  independent reviewer.</t>
+</section>

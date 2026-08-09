@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rfc xmlns:xi="http://www.w3.org/2001/XInclude" 
+     category="bcp" 
+     docName="draft-gerke-publication-process-reform-03" 
+     ipr="trust200902" 
+     updates="7841"
+     xml:lang="en" 
+     version="3"
+     consensus="true"
+     submissionType="IETF">
+
+<?rfc compact="yes" subcompact="no"?>
+
+<front>
+  <title abbrev="Publication Process Reform">Publication Process Reform to prevent misuse of AUTH48 or equivalent states</title>
+  
+  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-03"/>
+    
+  <author fullname="Timo Gerke" initials="T." surname="Gerke (Ed.)">
+    <organization>Independent</organization>
+    <address>
+      <postal>
+        <city>Hamburg</city>
+        <country>Germany</country>
+      </postal>
+      <email>ietf@timogerke.de</email>
+    </address>
+  </author>
+
+  <date year="2026" month="August" day="08" />
+  <workgroup>Individual Submission</workgroup>
+
+  <xi:include href="sections/abstract.xml" />
+
+</front>
+
+<middle>
+ 
+ <xi:include href="sections/introduction-and-terminology.xml" />
+
+ <section anchor="sect-2">
+ <name>Quality Assurance</name>
+  <t>This section defines the multi-stage validation criteria and deterministic 
+    milestones required to establish a verified quality assurance state prior to 
+    the initiation of the formal publication pipeline.</t>
+
+   <xi:include href="sections/technical-qa-finished-bp.xml" />
+   <xi:include href="sections/coi.xml" />
+   <xi:include href="sections/last-call-control.xml" />
+</section>  
+
+<section anchor="sect-3">
+<name>The Two-Pillar Model</name>
+  <xi:include href="sections/dual-timer.xml" />
+  <xi:include href="sections/normative-spliting.xml" />
+  <xi:include href="sections/integrity-and-reset.xml" />
+</section>
+  <section anchor="sect-4">
+  <name>Changes to Datatracker</name>
+     <t>To ensure absolute transparency, prevent unmanaged out-of-band
+     disclosures, and safeguard the consensus-finding process, the
+     IETF Datatracker <bcp14>MUST</bcp14> structurally enforce deterministic system
+     states. These granular states strictly isolate the operational
+     review mechanisms from the judicial escalation channels, 
+     establishing an unalterable, verifiable ledger of all
+     procedural milestones.</t>
+
+    <xi:include href="sections/changes-to-dt-iesg-level.xml" />
+    <xi:include href="sections/changes-to-dt-iab-level.xml" />
+
+  </section>
+<section anchor="sect-5">
+<name>Process-related permission and duties of IESG, IAB and RPC</name>
+  <xi:include href="sections/perm-and-duties-iesg.xml"/>
+  <xi:include href="sections/perm-and-duties-iab.xml"/>
+  <xi:include href="sections/perm-and-duties-rpc.xml"/> 
+</section>
+
+<!-- Section 6: IESG Requested Actions -->
+<xi:include href="sections/iesg-actions.xml" />
+
+<section anchor="sect-7">
+<name>Security Considerations</name>
+  <t>This document is a procedural governance rules document only. 
+  It does not define any new security systems, cryptographic primitives,
+  or protocol mechanisms. Therefore, no further security considerations 
+  need to be made.</t>
+</section>
+<section anchor="sect-8">
+<name>IANA Considerations</name>
+<t>There are no requests to IANA.</t>
+</section>
+</middle>
+<back>
+  <displayreference target="I-D.ietf-procon-2026bis" to="RFC2026bis" />
+
+ <references anchor="refs">
+<name>References</name>
+  <references anchor="normative-refs">
+  <name>Normative References</name>
+    <xi:include href="https://bib.ietf.org/public/rfc/bibxml9/reference.BCP.0014.xml" />
+    <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7841.xml" />
+    <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7991.xml" />
+    <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-procon-2026bis.xml"/>
+  </references>
+  <references anchor="informative-refs">
+  <name>Informative References</name>
+    <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8788.xml"/>
+  </references>
+</references>
+  <section anchor="apdx-a">
+  <name>Acknowledgements</name>
+    <t>The author respectfully thanks:</t>      
+    <ul>
+      <li>John Levine, for arciteectural review</li>
+      <li>Jean Mahoney, for operational requirements review</li>
+      <li>Rich Salz, for compatibility review with RFC 2026 successor</li>
+    </ul>
+  </section>
+  <xi:include href="sections/changelog.xml" />
+</back>
+</rfc>

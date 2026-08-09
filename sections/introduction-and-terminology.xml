@@ -1,0 +1,26 @@
+<section anchor="sect-1">
+<name>Introduction and Terminology</name> 
+  <section anchor="sect-1-1">
+  <name>Introduction</name>
+    <t>The objective of this document is to update the publication process regulations 
+    defined in <xref target="RFC7841"/>. Historically, this phase has lacked 
+    state-integrity constraints, allowing late-stage technical modifications. 
+    This document establishes a deterministic framework to prevent Working Group 
+    bypassing and safeguard the consensus. By applying a two-stage freeze system 
+    within the Datatracker architecture, these vulnerabilities are resolved.</t>
+
+    <t>Specifically, this mechanism enforces an immediate technical lock on core   
+    specifications (Stage 1) while isolating a volatile window for strictly 
+    editorial adjustments by the RFC Production Center (Stage 2). Sequential 
+    verification of both stages by a non-conflicted Chair or AD triggers automated 
+    consensus validation and Datatracker state processing metrics.</t>
+  </section>
+  <section anchor="sect-1-2">
+  <name>Terminology</name>
+    <t>The key words "<bcp14>MUST</bcp14>", "<bcp14>MUST NOT</bcp14>", "<bcp14>REQUIRED</bcp14>", 
+    "<bcp14>SHALL</bcp14>", "<bcp14>SHALL NOT</bcp14>", "<bcp14>SHOULD</bcp14>", "<bcp14>SHOULD NOT</bcp14>",
+    "<bcp14>RECOMMENDED</bcp14>", "<bcp14>NOT RECOMMENDED</bcp14>", "<bcp14>MAY</bcp14>", and "<bcp14>OPTIONAL</bcp14>"
+    in this document are to be interpreted as described in <xref target="BCP14" /> when, and only when, 
+    they appear in all capitals, as shown here.</t>
+  </section>
+</section>

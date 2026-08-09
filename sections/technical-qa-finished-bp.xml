@@ -1,0 +1,34 @@
+<section anchor="sect-2-1">
+    <name>Technical QA finished boilerplate</name>
+      <t>The global Technical Quality Assurance (QA) <bcp14>SHALL</bcp14>
+      operate as a strict two-stage validation hierarchy tied to 
+      the Datatracker state machine:</t>
+
+      <t>The Working Group Chair <bcp14>MUST NOT</bcp14> submit a document
+      to the IESG for review until the technical quality assurance boilerplate
+      has been formally granted and recorded within the Datatracker.</t>
+      
+      <t><strong>Stage 1 - Working Group Consensus:</strong> The non-conflicted
+      Co-Chair <bcp14>MUST</bcp14> verify and confirm the Working Group 
+      Consensus. Upon verification, the system <bcp14>SHALL</bcp14>
+      programmatically freeze the document. Following this technical lock, the 
+      document is released for formal submission to the IESG, pending manual
+      acknowledgment to transition the system to the <strong>IESG ACK</strong> state.</t>
+
+      <t><strong>Stage 2 - IESG process validation:</strong> This stage consists
+      of a mandatory manual audit by the IESG to verify exclusively that the Rough
+      Consensus regarding both the initial document adoption (if applicable) and
+      the conclusion of the QA process was correctly determined by the Working
+      Group leadership. Upon successful collective validation within the 
+      <strong>IESG REV</strong> state, the system <bcp14>SHALL</bcp14> automatically
+      insert the following consensus boilerplate as the last paragraph of the 
+      "Status of This Memo" section:</t>
+     <blockquote>
+        <t>"The responsible Working Group has reached rough consensus that the technical quality 
+         assurance was completed. The Internet Engineering Steering Group (IESG) successfully 
+         validated the process." </t>
+  </blockquote>
+  <t>Upon entering the <strong>IESG OK - Document ready for publication</strong> state,
+  the global QA process is complete, and the document <bcp14>SHALL</bcp14>
+  be transferred to the RPC for final editorial processing.</t>
+</section>

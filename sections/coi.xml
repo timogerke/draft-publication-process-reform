@@ -1,0 +1,23 @@
+<section anchor="sect-2-2">
+   <name>Conflict of Interest</name>
+     <t>The Datatracker <bcp14>MUST</bcp14> synchronize all state changes of the 
+     technical quality assurance boilerplate directly with the responsible
+     Working Group.</t>
+
+     <t>To ensure full transparency and prevent administrative bypasses, the 
+     following automation <bcp14>MUST</bcp14> be enforced:</t>
+     <ul>
+       <li><t><strong>Automated Mailing List Broadcast:</strong> Any transition to 
+       an approved boilerplate state or an automatic operational lock state 
+       <bcp14>MUST</bcp14> trigger an immediate, automated notification to the 
+       Working Group's official mailing list.</t></li>
+       <li><t><strong>Recusal Transparency:</strong> If the exception path from 
+       <xref target="sect-2-1" /> is triggered due to total recusal, the justification and the identity 
+       of the acting Area Advisor <bcp14>MUST</bcp14> be published openly in the WG 
+       Datatracker history.</t></li>
+    </ul>
+
+      <t>The Working Group retains the ultimate authority to challenge any state 
+     transition through the standard consensus mechanics if the recorded state 
+     does not reflect the actual technical consensus of the room.</t>
+   </section>

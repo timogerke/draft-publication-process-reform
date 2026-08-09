@@ -1,0 +1,40 @@
+<section anchor="sect-5-3">
+  <name>Permissions and duties of the RPC</name>
+  <t>
+      The RFC Production Center (RPC) acts as the sole primary enforcer and transactional 
+      execution authority of the publishing pipeline across all five processing streams 
+      (IETF, IRTF, IAB, Independent, and Editorial) once a document enters the state 
+      <strong>IESG OK - Document ready for publication</strong> or its stream-specific 
+      equivalent. The RPC's duty is strictly confined to editorial refinement and 
+      <bcp14>SHALL NOT</bcp14> alter the technical meaning of the text. 
+    </t>
+    <t>
+      To eliminate manual handling vulnerabilities and out-of-band interference during 
+      the AUTH48 or equivalent phase, the RPC's execution matrix is hardcoded into two discrete, 
+      sequential processing phases within the database matrix:
+    </t>
+    <ul>
+      <li>
+      <t><strong>Phase 1: RPC Editorial Review:</strong> The document enters the
+      exclusive editorial jurisdiction of the RFC Production Center (RPC). 
+      During this state, only editorial modifications <bcp14>SHALL</bcp14> 
+      be processed.</t>
+        
+      <t>Any technical or structural modification attempted via API or Web-Interface 
+      during the AUTH48 or equivalent state without procedural permission is 
+      <bcp14>REQUIRED</bcp14> to be blocked.</t>
+    </li>
+    <li>
+      <t><strong>Phase 2: Publication Queue:</strong> Upon completion of the editorial 
+        review and receipt of all required stream and author approvals, the document 
+        transitions automatically to this terminal processing block. The database object 
+        transitions to an immutable state, and all global write privileges <bcp14>MUST</bcp14> be 
+        instantly and completely revoked by the automated backend middleware, extinguishing 
+        editing capabilities for all human actors. The document remains frozen 
+        until the core repository execution layer via an automated system transaction 
+        assigns the sequential, permanent RFC number and executes the final commit, 
+        rendering the publication process fully indisputable.
+      </t>
+    </li>
+  </ul>
+</section>
