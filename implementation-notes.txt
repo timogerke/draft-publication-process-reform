@@ -1,0 +1,74 @@
+Implementation Notes
+
+1. Tools-Team
+
+1.1. Quality Assurance Boilerplate for Section 2.1
+     The Datatracker user interface SHALL programmatically disable and lock the 
+     "Submit to IESG for review" action vector for any document context that lacks 
+     a recorded, verified technical QA finished boilerplate. Setting this boilerplate 
+     SHALL immediately trigger a complete locking of all technical and normative 
+     sections in the backend.
+
+1.2. Conflict of Interest Handling for Section 2.2
+     The Datatracker backend MUST programmatically detect and isolate 
+     procedural conflicts using the following behavioral constraints:
+
+   a) Automated Self-Approval Prevention: The system MUST programmatically 
+      cross-reference active session credentials with the document's metadata 
+      author list. If a matching entity is detected, the approval action 
+      to grant the QA boilerplate MUST be disabled for that specific account.
+
+   b) Dual-Key Conflict Escalation: Once a conflict is flagged, the system 
+      MUST hold all state transitions pending formal approval from both a 
+      non-conflicted Co-Chair and a non-conflicted Co-AD. This joint approval 
+      MUST be recorded within a strict 72-hour window.
+
+1.3. Last Call Control and State Interlocking fpr Section 2.3
+The Datatracker validation engine MUST programmatically restrict the 
+initiation of Last Calls within a Working Group scope using the 
+following interlocking logic:
+
+   a) Parallel Last Call Prevention: The system MUST reject any submission 
+      to launch a Working Group Last Call (WG LC) if another document within 
+      the same Working Group is actively flagged with an ongoing Last Call.
+
+   b) Administrative Interlock: The system MUST programmatically disable and 
+      block the creation of any new Last Calls for all drafts under that 
+      Working Group’s jurisdiction as long as at least one document in that 
+      specific Working Group remains in the "IAB OK - Review done, IETF WG 
+      action required" state.
+
+   c) Automated Interlock Release: The system MUST automatically release the 
+      blockade specified in 1.3b immediately upon the blocked document 
+      transitioning out of the deficiency state via a recorded delta-revision.
+
+1.4. Permission and UI Architecture
+     The Datatracker user interface and access control layers MUST dynamically 
+     enforce the following structural boundaries based on the active state 
+     defined in Sections 3.1 and 3.2:
+
+   a) Metadata and Identity Masking: During states designated for neutral 
+      evaluation (e.g., IESG REV in Section 4.1, IAB REV in Section 4.2), 
+      the UI MUST programmatically mask the identity and associated email 
+      headers of the reviewer, removing the name field entirely from all 
+      public logs and transaction views.
+
+   b) Access Rights Reinstatement: Input and approval rights MUST be 
+      immediately reinstated to the responsible working group leadership 
+      once the judicial stream transitions to either "IAB OK - Review done, 
+      no objections" or "IAB OK - Review done, IETF WG action required" 
+      as specified in Section 4.2.
+
+   c) Automated Document Unfreeze: If an IAB evaluation concludes with a 
+      return to the working group under Section 3.2, the Datatracker MUST 
+      immediately unfreeze the document upon the state transitioning to 
+      "IAB OK - Review done, IETF WG action required" to allow the 
+      necessary technical revisions.
+
+2. RFC Production Center
+
+To support this workflow, the RFC-Editor Queue management system 
+shall implement a binary state flag designated as "Technical Work 
+Finalized: [Yes/No]". Toggling this flag to "Yes" is irrevocable 
+and serves as a deterministic system event that automatically 
+activates the 30-day timer.
