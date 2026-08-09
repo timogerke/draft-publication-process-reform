@@ -1,7 +1,16 @@
 <section anchor="sect-6">
-<name>IESG Requested Actions</name>
-  <t>To safeguard Quality Assurance and Exceptional Process Quality, the 
-  IESG is requested to issue two statements:</t>
+<name>Stream Maintaining Bodies Considerations</name>
+  <ul>
+    <t>To safeguard process and document quality the</t>
+    <li><t>Internet Architecture Board (IAB)</t></li>
+    <li><t>Internet Engineering Steering Group (IESG),</t></li>
+    <li><t>Internet Research Steering Group (IRSG)</t></li>
+    <li><t>Independent Stream Editor (ISE)</t></li>
+    <li><t>all other stream maintaing bodies fulfilling 
+    the creteria defined by <xref target="RFC7841" section="2" /></t></li>
+    <t>are requested to issue two Joint Statements:</t>
+  </ul>
+
   <ol type="a">
     <li>
       <t><strong>Quality Management Requirements</strong></t>
