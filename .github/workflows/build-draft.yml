@@ -57,7 +57,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Auto-commit and push revision ${{env.DRAFT_NAME}}-${{env.REVISION}}"
-          file_pattern: | 
-            archive/* 
-            gh-pages/*
-
+          file_pattern: '.'
