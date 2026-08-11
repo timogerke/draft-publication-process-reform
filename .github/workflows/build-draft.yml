@@ -51,7 +51,7 @@ jobs:
         run: xml2rfc --expand --allow-local-file-access main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
 
       - name: Compile expanded XML
-        run: xml2rfc --v3 --text --allow-local-file-access archive/${DRAFT_NAME}-${REVISION}.xml -o gh-pages/${DRAFT_NAME}-${REVISION.txt
+        run: xml2rfc --v3 --text --allow-local-file-access archive/${DRAFT_NAME}-${REVISION}.xml -o gh-pages/${DRAFT_NAME}-${REVISION}.txt
 
       - name: Commit and Push Changes to Repository
         uses: stefanzweifel/git-auto-commit-action@v7
