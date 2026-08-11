@@ -58,6 +58,6 @@ jobs:
         with:
           commit_message: "Auto-commit and push revision ${{env.DRAFT_NAME}}-${{env.REVISION}}"
           file_pattern: | 
-            archive/ 
-            gh-pages/
+            archive/* 
+            gh-pages/*
 
