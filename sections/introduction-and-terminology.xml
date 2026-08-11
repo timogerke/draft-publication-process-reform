@@ -1,7 +1,5 @@
 <section anchor="sect-1">
-<name>Introduction and Terminology</name> 
-  <section anchor="sect-1-1">
-  <name>Introduction</name>
+<name>Introduction</name> 
     <t>The objective of this document is to update the publication process regulations 
     defined in <xref target="RFC7841"/>. Historically, this phase has lacked 
     state-integrity constraints, allowing late-stage technical modifications. 
@@ -14,8 +12,8 @@
     editorial adjustments by the RFC Production Center (Stage 2). Sequential 
     verification of both stages by a non-conflicted Chair or AD triggers automated 
     consensus validation and Datatracker state processing metrics.</t>
-  </section>
-  <section anchor="sect-1-2">
+ 
+  <section anchor="sect-1-1">
   <name>Terminology</name>
     <t>The key words "<bcp14>MUST</bcp14>", "<bcp14>MUST NOT</bcp14>", "<bcp14>REQUIRED</bcp14>", 
     "<bcp14>SHALL</bcp14>", "<bcp14>SHALL NOT</bcp14>", "<bcp14>SHOULD</bcp14>", "<bcp14>SHOULD NOT</bcp14>",

@@ -16,7 +16,7 @@
   
   <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-03"/>
     
-  <author fullname="Timo Gerke" initials="T." surname="Gerke (Ed.)">
+  <author fullname="Timo Gerke" initials="T." surname="Gerke" role="editor">
     <organization>Independent</organization>
     <address>
       <postal>
@@ -27,7 +27,7 @@
     </address>
   </author>
 
-  <date year="2026" month="August" day="08" />
+  <date year="2026" month="August" day="10" />
   <workgroup>Individual Submission</workgroup>
 
   <xi:include href="sections/abstract.xml" />
@@ -92,9 +92,8 @@
 </section>
 </middle>
 <back>
-  <displayreference target="I-D.ietf-procon-2026bis" to="RFC2026bis" />
-
- <references anchor="refs">
+<displayreference target="I-D.ietf-procon-2026bis" to="RFC2026bis" />
+<references anchor="refs">
 <name>References</name>
   <references anchor="normative-refs">
   <name>Normative References</name>

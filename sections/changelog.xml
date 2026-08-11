@@ -48,7 +48,7 @@
           <li><t>Split references section into strict Normative and Informative categories.</t></li>
           <li><t>Modularized XML source to support collaborative contributions.</t></li>
           <li><t>Renamed Section 6 to "Stream Maintaining Bodies Considerations"</t></li>
-          <li><t>Synced revisions datatracker <-> github</t></li>
+          <li><t>Synced revisions datatracker with github</t></li>
         </ul>
       </li>
     </ul>
