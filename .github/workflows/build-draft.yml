@@ -25,16 +25,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # Build Environment
       - name: Build Environment
-        run: |
-          mkdir archive gh-pages
+        run: mkdir archive gh-pages
 
       # Runs a single command using the runners shell
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with: 
           python-version: '>=3.12'
 
@@ -44,9 +43,9 @@ jobs:
 
       - name: Extract Revision
         run: |
-          TMP=$(python -c "import xml.etree.ElementTree as ET; r = ET.parse('${DRAFT_NAME}.xml').getroot(); print(r.attrib['docName'])")
+          TMP=$(python -c "import xml.etree.ElementTree as ET; r = ET.parse('main.xml').getroot(); print(r.attrib['docName'])")
           REVISION=$(echo ${TMP} | sed -e "s/${DRAFT_NAME}-//g")
-          echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "REVISION=${REVISION}" >> $GITHUB_ENV
           
       - name: Expand XML
         run: xml2rfc --expand --allow-local-file-access main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
@@ -57,6 +56,9 @@ jobs:
       - name: Commit and Push Changes to Repository
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: Auto-commit and push revision ${{env.DRAFT_NAME}}-${{env.REVISION}}
-          file_pattern: 'archive/ gh-pages/'
-          
+          commit_message: "Auto-commit and push revision ${{env.DRAFT_NAME}}-${{env.REVISION}}"
+          file_pattern: | 
+            archive/ 
+            gh-pages/
+
+  
