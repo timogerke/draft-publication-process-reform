@@ -51,7 +51,9 @@ jobs:
           echo "REVISION=${REVISION}" >> $GITHUB_ENV
           
       - name: Expand XML
-        run: xml2rfc --expand --allow-local-file-access main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
+        run: |    
+          xml2rfc --expand --allow-local-file-access main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
+          sed -i 's/ xml:base="[^"]*"//g' archive/${DRAFT_NAME}-${REVISION}.xml
 
       - name: Compile expanded XML
         run: xml2rfc --v3 --text --allow-local-file-access archive/${DRAFT_NAME}-${REVISION}.xml -o gh-pages/${DRAFT_NAME}-${REVISION}.txt
