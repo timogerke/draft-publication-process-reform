@@ -30,10 +30,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v7
 
-      # Build Environment
-      - name: Build Environment
-        run: mkdir archive gh-pages
-
       # Runs a single command using the runners shell
       - name: Setup Python
         uses: actions/setup-python@v7
