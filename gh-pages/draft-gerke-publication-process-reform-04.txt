@@ -1,0 +1,672 @@
+
+
+
+
+Individual Submission                                      T. Gerke, Ed.
+Internet-Draft                                               Independent
+Updates: 7841 (if approved)                               19 August 2026
+Intended status: Best Current Practice                                  
+Expires: 20 February 2027
+
+
+  Publication Process Reform to prevent misuse of AUTH48 or equivalent
+                                 states
+               draft-gerke-publication-process-reform-04
+
+Abstract
+
+   This document updates the AUTH48 or equivalent process by introducing
+   deterministic state-integrity constraints within the IETF Datatracker
+   architecture.  It establishes automated validation milestones and
+   explicit access controls to prevent late technical modifications
+   after the Working Group Last Call, thereby safeguarding the Rough
+   Consensus.
+
+   This document updates RFC 7841.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 20 February 2027.
+
+Copyright Notice
+
+   Copyright (c) 2026 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+
+
+
+Gerke                   Expires 20 February 2027                [Page 1]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+     1.1.  Terminology . . . . . . . . . . . . . . . . . . . . . . .   3
+   2.  Quality Assurance . . . . . . . . . . . . . . . . . . . . . .   3
+     2.1.  Technical QA finished boilerplate . . . . . . . . . . . .   3
+     2.2.  Conflict of Interest  . . . . . . . . . . . . . . . . . .   4
+     2.3.  Last Call Control . . . . . . . . . . . . . . . . . . . .   4
+   3.  The Two-Pillar Model  . . . . . . . . . . . . . . . . . . . .   4
+     3.1.  The Timer . . . . . . . . . . . . . . . . . . . . . . . .   4
+     3.2.  Normative Splitting . . . . . . . . . . . . . . . . . . .   5
+     3.3.  Process Integrity and Automatic Reset . . . . . . . . . .   5
+   4.  Changes to Datatracker  . . . . . . . . . . . . . . . . . . .   5
+     4.1.  IESG Level  . . . . . . . . . . . . . . . . . . . . . . .   5
+     4.2.  IAB Level . . . . . . . . . . . . . . . . . . . . . . . .   7
+   5.  Process-related permissions and duties of IESG, IAB and
+           RPC . . . . . . . . . . . . . . . . . . . . . . . . . . .   8
+     5.1.  Permissions and duties of the IESG  . . . . . . . . . . .   8
+     5.2.  Permissions and duties of the IAB . . . . . . . . . . . .   8
+     5.3.  Permissions and duties of the RPC . . . . . . . . . . . .   9
+   6.  Stream Maintaining Bodies Considerations  . . . . . . . . . .   9
+   7.  Security Considerations . . . . . . . . . . . . . . . . . . .  10
+   8.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .  10
+   9.  References  . . . . . . . . . . . . . . . . . . . . . . . . .  10
+     9.1.  Normative References  . . . . . . . . . . . . . . . . . .  10
+     9.2.  Informative References  . . . . . . . . . . . . . . . . .  11
+   Appendix A.  Acknowledgements . . . . . . . . . . . . . . . . . .  11
+   Appendix B.  Changes  . . . . . . . . . . . . . . . . . . . . . .  11
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  12
+
+1.  Introduction
+
+   The objective of this document is to update the publication process
+   regulations defined in [RFC7841].  Historically, this phase has
+   lacked state-integrity constraints, allowing late-stage technical
+   modifications.  This document establishes a deterministic framework
+   to prevent Working Group bypassing and safeguard the consensus.  By
+   applying a two-stage freeze system within the Datatracker
+   architecture, these vulnerabilities are resolved.
+
+   Specifically, this mechanism enforces an immediate technical lock on
+   core specifications (Stage 1) while isolating a volatile window for
+   strictly editorial adjustments by the RFC Production Center (Stage
+
+
+
+Gerke                   Expires 20 February 2027                [Page 2]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   2).  Sequential verification of both stages by a non-conflicted Chair
+   or AD triggers automated consensus validation and Datatracker state
+   processing metrics.
+
+1.1.  Terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in
+   [BCP14] when, and only when, they appear in all capitals, as shown
+   here.
+
+2.  Quality Assurance
+
+   This section defines the multi-stage validation criteria and
+   deterministic milestones required to establish a verified quality
+   assurance state prior to the initiation of the formal publication
+   pipeline.
+
+2.1.  Technical QA finished boilerplate
+
+   The global Technical Quality Assurance (QA) SHALL operate as a strict
+   two-stage validation hierarchy tied to the Datatracker state machine:
+
+   The Working Group Chair MUST NOT submit a document to the IESG for
+   review until the technical quality assurance boilerplate has been
+   formally granted and recorded within the Datatracker.
+
+   *Stage 1 - Working Group Consensus:* The non-conflicted Co-Chair MUST
+   verify and confirm the Working Group Consensus.  Upon verification,
+   the system SHALL programmatically freeze the document.  Following
+   this technical lock, the document is released for formal submission
+   to the IESG, pending manual acknowledgment to transition the system
+   to the *IESG ACK* state.
+
+   *Stage 2 - IESG process validation:* This stage consists of a
+   mandatory manual audit by the IESG to verify exclusively that the
+   Rough Consensus regarding both the initial document adoption (if
+   applicable) and the conclusion of the QA process was correctly
+   determined by the Working Group leadership.  Upon successful
+   collective validation within the *IESG REV* state, the system SHALL
+   automatically insert the following consensus boilerplate as the last
+   paragraph of the "Status of This Memo" section:
+
+   |  "The responsible Working Group has reached rough consensus that
+   |  the technical quality assurance was completed.  The Internet
+   |  Engineering Steering Group (IESG) successfully validated the
+   |  process."
+
+
+
+Gerke                   Expires 20 February 2027                [Page 3]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   Upon entering the *IESG OK - Document ready for publication* state,
+   the global QA process is complete, and the document SHALL be
+   transferred to the RPC for final editorial processing.
+
+2.2.  Conflict of Interest
+
+   The Datatracker MUST synchronize all state changes of the technical
+   quality assurance boilerplate directly with the responsible Working
+   Group.
+
+   To ensure full transparency and prevent administrative bypasses, the
+   following automation MUST be enforced:
+
+   *  *Automated Mailing List Broadcast:* Any transition to an approved
+      boilerplate state or an automatic operational lock state MUST
+      trigger an immediate, automated notification to the Working
+      Group's official mailing list.
+
+   *  *Recusal Transparency:* If the exception path from Section 2.1 is
+      triggered due to total recusal, the justification and the identity
+      of the acting Area Advisor MUST be published openly in the WG
+      Datatracker history.
+
+   The Working Group retains the ultimate authority to challenge any
+   state transition through the standard consensus mechanics if the
+   recorded state does not reflect the actual technical consensus of the
+   room.
+
+2.3.  Last Call Control
+
+   A Chair or Area Director SHALL NOT be permitted to:
+
+   *  Initiate a Working Group Last Call while another Last Call is
+      active in this Working Group
+
+   *  Initiate any new Last Calls within the Working Group while any
+      document in that Working Group remains in the *IESG OK - Review
+      done, WG action required* state.
+
+3.  The Two-Pillar Model
+
+3.1.  The Timer
+
+   The publication pipeline validation enforces the following timer
+   constraint:
+
+   *  30-day timer: A document MUST be finalized within 30 days from
+      entering the AUTH48 or equivalent state.
+
+
+
+Gerke                   Expires 20 February 2027                [Page 4]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   *  Once the timer has ended, the document SHALL be published.
+
+   With explicit authorization of the IESG, the 30-day timer can be
+   extended by maximum of ten days overall.
+
+3.2.  Normative Splitting
+
+   After the 30-day timer expires, the RPC SHALL automatically split the
+   cluster.  Documents without normative references on the blocker SHALL
+   be released and published immediately.
+
+3.3.  Process Integrity and Automatic Reset
+
+   Quality assurance MUST be done before Working Group Last Call and
+   MUST NOT be executed in the AUTH48 or equivalent state.  The RPC is
+   authorized to make editorial changes only.
+
+   To safeguard technical competence, the IESG MUST NOT evaluate or make
+   decisions for any document or process if both responsible Area
+   Directors are unavailable.  Priority SHOULD be given to consulting an
+   Area-Advisor to enable the remaining IESG to make a qualified
+   decision.
+
+   If time permits, consideration of the document or process SHOULD be
+   deferred to the next scheduled IESG meeting or telechat.
+
+   If both Area Directors remain unavailable, no qualified decision can
+   be reached via Advisor consultation, or deadlines do not permit
+   deferral, approval authority MUST be escalated to the Internet
+   Architecture Board (IAB) to appoint a neutral, independent reviewer.
+
+4.  Changes to Datatracker
+
+   To ensure absolute transparency, prevent unmanaged out-of-band
+   disclosures, and safeguard the consensus-finding process, the IETF
+   Datatracker MUST structurally enforce deterministic system states.
+   These granular states strictly isolate the operational review
+   mechanisms from the judicial escalation channels, establishing an
+   unalterable, verifiable ledger of all procedural milestones.
+
+4.1.  IESG Level
+
+   The IESG MAY decide to initiate a parallel dual-review on complex
+   topics consisting of two isolated entities, where at least one entity
+   MUST be external.  This decision MUST be formally documented.  If all
+   Area Directors assigned to the document are conflicted or
+   unavailable, the model as described above is MUST be applied.
+
+
+
+
+Gerke                   Expires 20 February 2027                [Page 5]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   Following Datatracker states MUST be instated or renamed:
+
+   *  *IESG QUE*
+
+      -  *Queued for acknowledgement:* Set automatically by the system
+         upon Working Group Chair submission, pending manual
+         acknowledgment.
+
+      -  *Queued for review:* Set automatically after acknowledgment,
+         pending reviewing entity assignment.
+
+   *  *IESG ACK - Acknowledged:* Indicates that the document was
+      received and has completed formal validation (Sanity Check).  This
+      state SHALL NOT last longer than five business days.
+
+   *  *IESG REV*
+
+      -  *Assigned to reviewing entity:* Indicates that the
+         uncompromised reviewing entity - or, if triggered by the
+         criteria as defined in Section 2.2, the parallel internal and
+         external reviewer entities - has taken formal charge of the
+         ledger, initiating the confidential evaluation period.
+
+      -  *Review done, no objections:* Confirms that the collective body
+         has cleared the entity without technical caveats and that all
+         active parallel review metrics show no unresolved structural
+         variance.
+
+      -  *Review done, WG action required:* This state SHALL log a
+         structured list of formal deficiencies within the Datatracker,
+         which SHALL automatically return the docket to the community
+         for resolution.
+
+      -  *WG action verified, no objections:* This state SHALL document
+         the final and successful collective validation of the working
+         group's delta-revisions against the logged deficiencies.
+
+   *  *IESG OK*
+
+      -  *Document ready for publication*: The activation of this state
+         SHALL programmatically execute the immediate and irreversible
+         handover of the document object to the RFC Editor Queue.  Upon
+         execution, only the RPC SHALL be allowed to make changes to the
+         document.
+
+      -  *Process clearance granted:* This state SHALL activate the
+         executive authorization for the requested procedural variance,
+         concluding the IESG-level exceptional review.
+
+
+
+Gerke                   Expires 20 February 2027                [Page 6]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   *  *IESG EPR - Exceptional Process requested by WG:* This state SHALL
+      record the transparent import of a working group's formal petition
+      for an out-of-band mechanism outside the scope of [RFC2026bis].
+
+   On complex topics, the IESG MAY consider consulting the IAB for
+   process validation.  The IESG SHALL NOT be authorized to disclose the
+   name of the reviewing entity even to the authors.
+
+   The process validation MUST be done by the IESG.
+
+4.2.  IAB Level
+
+   The architectural and procedural clearance stream under the
+   jurisdiction of the Internet Architecture Board (IAB) SHALL enforce a
+   deterministic, linear state machine.  This high-level governance
+   structure strictly isolates the structural final approval from the
+   operational production mechanisms of the IESG Level specified in
+   Section 4.1.
+
+   Unlike the operative pipeline, the IAB workflow SHALL NOT inherit
+   volatile technical review states.  Instead, the Datatracker SHALL
+   programmatically restrict the IAB stream to architectural
+   verification, structural consultation metrics, and unalterable final
+   publishing clearances.  The following granular states SHALL be
+   instated:
+
+   *  *IAB QUE - Queued for process validation:* This state SHALL be set
+      when the IESG sent a process validation request.  The state SHALL
+      be set automatically after the request has been placed in the
+      queue.
+
+   *  *IAB ACK - Acknowledged:* This state SHALL be set manually only by
+      the chair or any chair-authorized member.  This state SHOULD NOT
+      last longer than 5 business days.
+
+   *  *IAB CON*
+
+      -  *Consultation request received from IESG:* This state SHALL be
+         set after the IESG formally requested an IAB consultation.
+
+      -  *Consultation scheduled:* This state SHALL be set when IAB and
+         IESG made an appointment for consultation.
+
+   *  *IAB OK*
+
+
+
+
+
+
+
+Gerke                   Expires 20 February 2027                [Page 7]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+      -  *Decision made and published:* This state SHALL freeze the
+         final judgment of the board and SHALL immediately and
+         permanently commit the unalterable response into the public
+         Datatracker log.
+
+      -  *Document sent to IESG for publication:* This state SHALL
+         activate the executive transfer of the cleared technical or
+         architectural payload back to the operational stream for final
+         printing.
+
+      -  *Exceptional process validated, clearance can be granted:* This
+         state SHALL ratify the highest-level structural approval for a
+         disputed out-of-band mechanism, formally notifying the IESG
+         that executive clearance may be executed.
+
+5.  Process-related permissions and duties of IESG, IAB and RPC
+
+5.1.  Permissions and duties of the IESG
+
+   The Internet Engineering Steering Group (IESG) acts strictly as a
+   procedural state-transition authority within the Datatracker
+   ecosystem.  The IESG's operational boundary is tightly confined to
+   the states *IESG QUE*, *IESG ACK*, and *IESG REV*.
+
+   Upon triggering the state transition to *IESG OK - Document Ready for
+   publication*, all write and update permissions for the IESG regarding
+   the document object model and its metadata in the database matrix
+   MUST be instantly and irrevocably revoked by the automated backend
+   middleware.  The IESG SHALL NOT exert any further administrative or
+   informal influence over the document lifecycle, in strict compliance
+   with the absolute non-interference directives defined in Section 4.1.
+
+5.2.  Permissions and duties of the IAB
+
+   The Internet Architecture Board (IAB) serves as the structural
+   governance and appeal body under Section 8.7 of [RFC2026bis].  The
+   IAB's jurisdiction over active document streams is strictly bounded
+   by deterministic, non-extendable procedural timer events.
+
+   Upon the filing of a formal appeal, the IAB Secretariat MUST enforce
+   a strict, unalterable maximum three-week (21 days) response window
+   for the targeted functional body to deliver its official response
+   matrix.  Any technical evidence submitted to the file MUST be
+   categorized as integral background context material and MUST be
+   unedited and fully disclosed to the public archive immediately upon
+   the expiration of the 21-day evaluation window, ensuring a complete
+   and unalterable audit trail.
+
+
+
+
+Gerke                   Expires 20 February 2027                [Page 8]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+5.3.  Permissions and duties of the RPC
+
+   The RFC Production Center (RPC) acts as the sole primary enforcer and
+   transactional execution authority of the publishing pipeline across
+   all five processing streams (IETF, IRTF, IAB, Independent, and
+   Editorial) once a document enters the state *IESG OK - Document ready
+   for publication* or its stream-specific equivalent.  The RPC's duty
+   is strictly confined to editorial refinement and SHALL NOT alter the
+   technical meaning of the text.
+
+   To eliminate manual handling vulnerabilities and out-of-band
+   interference during the AUTH48 or equivalent phase, the RPC's
+   execution matrix is hardcoded into two discrete, sequential
+   processing phases within the database matrix:
+
+   *  *Phase 1: RPC Editorial Review:* The document enters the exclusive
+      editorial jurisdiction of the RFC Production Center (RPC).  During
+      this state, only editorial modifications SHALL be processed.
+
+      Any technical or structural modification attempted via API or Web-
+      Interface during the AUTH48 or equivalent state without procedural
+      permission is REQUIRED to be blocked.
+
+   *  *Phase 2: Publication Queue:* Upon completion of the editorial
+      review and receipt of all required stream and author approvals,
+      the document transitions automatically to this terminal processing
+      block.  The database object transitions to an immutable state, and
+      all global write privileges MUST be instantly and completely
+      revoked by the automated backend middleware, extinguishing editing
+      capabilities for all human actors.  The document remains frozen
+      until the core repository execution layer via an automated system
+      transaction assigns the sequential, permanent RFC number and
+      executes the final commit, rendering the publication process fully
+      indisputable.
+
+6.  Stream Maintaining Bodies Considerations
+
+   To safeguard process and document quality, the
+
+   *  Internet Architecture Board (IAB)
+
+   *  Internet Engineering Steering Group (IESG),
+
+   *  Internet Research Steering Group (IRSG)
+
+   *  Independent Stream Editor (ISE)
+
+
+
+
+
+Gerke                   Expires 20 February 2027                [Page 9]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+   *  all other stream maintaining bodies fulfilling the criteria by
+      Section 2 of [RFC7841]
+
+   are requested to issue two Joint Statements:
+
+   a.  *Quality Management Requirements*
+
+       I.   describing assurance and process validation criteria,
+
+       II.  keeping the statement up to date.
+
+       Only already pipelined documents SHALL be published.
+
+   b.  *Exceptional Process Baseline Requirements*
+
+       I.   defining baseline requirements for exceptional processes and
+            their validation procedures,
+
+       II.  keeping the statement up to date.
+
+       The absolute baseline for these requirements is the direct
+       comparability to Section 8.7 of [RFC2026bis], using the
+       operational and consensus principles established in historical
+       precedents such as [RFC8788].
+
+       On complex topics the IESG MAY consider consulting the IAB for
+       process validation.
+
+7.  Security Considerations
+
+   This document defines procedural governance rules only and does not
+   introduce any security protocols or protocol parameters.  Therefore,
+   no further security considerations need to be made.
+
+8.  IANA Considerations
+
+   There are no requests to IANA.
+
+9.  References
+
+9.1.  Normative References
+
+   [BCP14]    Best Current Practice 14,
+              <https://www.rfc-editor.org/info/bcp14>.
+              At the time of writing, this BCP comprises the following:
+
+
+
+
+
+
+Gerke                   Expires 20 February 2027               [Page 10]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+              Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <https://www.rfc-editor.org/info/rfc2119>.
+
+              Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
+   [RFC7841]  Halpern, J., Ed., Daigle, L., Ed., and O. Kolkman, Ed.,
+              "RFC Streams, Headers, and Boilerplates", RFC 7841,
+              DOI 10.17487/RFC7841, May 2016,
+              <https://www.rfc-editor.org/info/rfc7841>.
+
+   [RFC7991]  Hoffman, P., "The "xml2rfc" Version 3 Vocabulary",
+              RFC 7991, DOI 10.17487/RFC7991, December 2016,
+              <https://www.rfc-editor.org/info/rfc7991>.
+
+9.2.  Informative References
+
+   [RFC8788]  Leiba, B., "Eligibility for the 2020-2021 Nominating
+              Committee", RFC 8788, DOI 10.17487/RFC8788, May 2020,
+              <https://www.rfc-editor.org/info/rfc8788>.
+
+   [RFC2026bis]
+              Salz, R. and S. O. Bradner, "The Internet Standards
+              Process", Work in Progress, Internet-Draft, draft-ietf-
+              procon-2026bis-11, 1 July 2026,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-procon-
+              2026bis-11>.
+
+Appendix A.  Acknowledgements
+
+   The author respectfully thanks:
+
+   *  John Levine, for architectural review
+
+   *  Jean Mahoney, for operational requirements review
+
+   *  Rich Salz, for compatibility review with RFC 2026 successor
+
+Appendix B.  Changes
+
+   *  Changes since draft-gerke-auth48-process-reform-00
+      -  Transformed entire document to RFCXML
+
+      -  Introduced two-stage freeze system
+
+
+
+
+Gerke                   Expires 20 February 2027               [Page 11]
+
+Internet-Draft         Publication Process Reform            August 2026
+
+
+      -  minor issues
+   *  Changes since draft-gerke-auth48-process-reform-01
+      -  Added required Sections Introduction, Security and IANA
+         considerations, References.
+      -  Updated two-stage system (Section 2.1)
+         1.  WG Stage
+         2.  IESG reviews and sets boilerplate
+      -  Added definition of total recusal to Section 2.2.
+      -  Refined IAB States in Section 4.2
+      -  Corrected/Added inter-section references
+      -  Inserted new Section 5 Process-related permissions and duties
+         of IESG, IAB and RPC
+   *  Changes from draft-gerke-publication-process-reform-00
+      -  Shortend Security Considerations section
+      -  Completed work on [RFC7991] compatibility
+   *  Changes since draft-gerke-publication-process-reform-01
+      -  Addressed confusing Tooling-Issues ;-)
+
+      -  Separated Requirement Language to Section 1.1
+
+      -  idnits3 runs with zero errors in Submission mode (author-tools)
+   *  Changes from draft-gerke-publication-process-reform-02
+      -  Split references section into strict Normative and Informative
+         categories.
+
+      -  Modularized XML source to support collaborative contributions.
+
+      -  Renamed Section 6 to "Stream Maintaining Bodies Considerations"
+
+      -  Synced revisions datatracker with github
+   *  Changes from draft-gerke-publication-process-reform-03
+      -  Removed redundant 10 days timer in Section 3.1.
+
+      -  Wording corrections
+
+      -  Updated Security Considerations
+
+Author's Address
+
+   Timo Gerke (editor)
+   Independent
+   Hamburg
+   Germany
+   Email: ietf@timogerke.de
+
+
+
+
+
+
+
+Gerke                   Expires 20 February 2027               [Page 12]
