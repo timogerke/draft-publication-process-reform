@@ -60,7 +60,7 @@
 
 <section anchor="sect-3">
 <name>The Two-Pillar Model</name>
-  <xi:include href="sections/dual-timer.xml" />
+  <xi:include href="sections/timer.xml" />
   <xi:include href="sections/normative-spliting.xml" />
   <xi:include href="sections/integrity-and-reset.xml" />
 </section>
