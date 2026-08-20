@@ -18,7 +18,7 @@
     </author>
     <date year="2026" month="August" day="10"/>
     <workgroup>Individual Submission</workgroup>
-    <abstract xml:base="sections/abstract.xml">
+    <abstract>
       <t>This document updates the AUTH48 or equivalent process by introducing 
      deterministic state-integrity constraints within the IETF 
      Datatracker architecture. It establishes automated validation 
@@ -29,7 +29,7 @@
     </abstract>
   </front>
   <middle>
-    <section anchor="sect-1" xml:base="sections/introduction-and-terminology.xml">
+    <section anchor="sect-1">
       <name>Introduction</name>
       <t>The objective of this document is to update the publication process regulations 
     defined in <xref target="RFC7841"/>. Historically, this phase has lacked 
@@ -56,7 +56,7 @@
       <t>This section defines the multi-stage validation criteria and deterministic 
     milestones required to establish a verified quality assurance state prior to 
     the initiation of the formal publication pipeline.</t>
-      <section anchor="sect-2-1" xml:base="sections/technical-qa-finished-bp.xml">
+      <section anchor="sect-2-1">
         <name>Technical QA finished boilerplate</name>
         <t>The global Technical Quality Assurance (QA) <bcp14>SHALL</bcp14>
       operate as a strict two-stage validation hierarchy tied to 
@@ -87,7 +87,7 @@
   the global QA process is complete, and the document <bcp14>SHALL</bcp14>
   be transferred to the RPC for final editorial processing.</t>
       </section>
-      <section anchor="sect-2-2" xml:base="sections/coi.xml">
+      <section anchor="sect-2-2">
         <name>Conflict of Interest</name>
         <t>The Datatracker <bcp14>MUST</bcp14> synchronize all state changes of the 
      technical quality assurance boilerplate directly with the responsible
@@ -112,7 +112,7 @@
      transition through the standard consensus mechanics if the recorded state 
      does not reflect the actual technical consensus of the room.</t>
       </section>
-      <section anchor="sect-2-3" xml:base="sections/last-call-control.xml">
+      <section anchor="sect-2-3">
         <name>Last Call Control</name>
         <t>A Chair or Area Director <bcp14>SHALL NOT</bcp14> be permitted to:</t>
         <ul>
@@ -131,7 +131,7 @@
     </section>
     <section anchor="sect-3">
       <name>The Two-Pillar Model</name>
-      <section anchor="sect-3-1" xml:base="sections/dual-timer.xml">
+      <section anchor="sect-3-1">
         <name>The Dual-timer system</name>
         <t>The publication pipeline validation enforces the following dual-timer constraints:</t>
         <ul>
@@ -147,13 +147,13 @@
         </ul>
         <t>With explicit authorization of the IESG, the 30-day timer can be extended by maximum of ten days overall.</t>
       </section>
-      <section anchor="sect-3-2" xml:base="sections/normative-spliting.xml">
+      <section anchor="sect-3-2">
         <name>Normative Splitting</name>
         <t>After the 30-day timer expires, the RPC <bcp14>SHALL</bcp14> automatically split the cluster. 
   Documents without normative references on the blocker <bcp14>SHALL</bcp14> be released and 
   published immediately.</t>
       </section>
-      <section anchor="sect-3-3" xml:base="sections/integrity-and-reset.xml">
+      <section anchor="sect-3-3">
         <name>Process Integrity and Automatic Reset</name>
         <t>Quality assurance <bcp14>MUST</bcp14> be done before Working Group Last Call and 
   <bcp14>MUST NOT</bcp14> be executed in the AUTH48 or equivalent state. 
@@ -181,7 +181,7 @@
      review mechanisms from the judicial escalation channels, 
      establishing an unalterable, verifiable ledger of all
      procedural milestones.</t>
-      <section anchor="sect-4-1" xml:base="sections/changes-to-dt-iesg-level.xml">
+      <section anchor="sect-4-1">
         <name>IESG Level</name>
         <t>The IESG <bcp14>MAY</bcp14> decide to initiate a parallel dual-review on 
       complex topics consisting of two isolated entities, where at 
@@ -266,7 +266,7 @@
    entity even to the authors.</t>
         <t>The process validation <bcp14>MUST</bcp14> be done by the IESG.</t>
       </section>
-      <section anchor="sect-4-2" xml:base="sections/changes-to-dt-iab-level.xml">
+      <section anchor="sect-4-2">
         <name>IAB Level</name>
         <t>The architectural and procedural clearance stream under the jurisdiction 
    of the Internet Architecture Board (IAB) <bcp14>SHALL</bcp14> enforce a deterministic, 
@@ -327,7 +327,7 @@
     </section>
     <section anchor="sect-5">
       <name>Process-related permission and duties of IESG, IAB and RPC</name>
-      <section anchor="sect-5-1" xml:base="sections/perm-and-duties-iesg.xml">
+      <section anchor="sect-5-1">
         <name>Permissions and duties of the IESG</name>
         <t>
       The Internet Engineering Steering Group (IESG) acts strictly as a procedural 
@@ -344,7 +344,7 @@
       compliance with the absolute non-interference directives defined in <xref target="sect-4-1"/>.
         </t>
       </section>
-      <section anchor="sect-5-2" xml:base="sections/perm-and-duties-iab.xml">
+      <section anchor="sect-5-2">
         <name>Permissions and duties of the IAB</name>
         <t>
       The Internet Architecture Board (IAB) serves as the supreme constitutional appeal 
@@ -362,7 +362,7 @@
       complete and unalterable audit trail.
         </t>
       </section>
-      <section anchor="sect-5-3" xml:base="sections/perm-and-duties-rpc.xml">
+      <section anchor="sect-5-3">
         <name>Permissions and duties of the RPC</name>
         <t>
       The RFC Production Center (RPC) acts as the sole primary enforcer and transactional 
@@ -403,7 +403,7 @@
       </section>
     </section>
     <!-- Section 6: IESG Requested Actions -->
-<section anchor="sect-6" xml:base="sections/iesg-actions.xml">
+<section anchor="sect-6">
       <name>Stream Maintaining Bodies Considerations</name>
       <t>To safeguard process and document quality, the</t>
       <ul>
@@ -476,7 +476,7 @@
       <name>References</name>
       <references anchor="normative-refs">
         <name>Normative References</name>
-        <referencegroup anchor="BCP14" target="https://www.rfc-editor.org/info/bcp14" xml:base="https://bib.ietf.org/public/rfc/bibxml9/reference.BCP.0014.xml">
+        <referencegroup anchor="BCP14" target="https://www.rfc-editor.org/info/bcp14">
           <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
             <front>
               <title>Key words for use in RFCs to Indicate Requirement Levels</title>
@@ -504,7 +504,7 @@
             <seriesInfo name="DOI" value="10.17487/RFC8174"/>
           </reference>
         </referencegroup>
-        <reference anchor="RFC7841" target="https://www.rfc-editor.org/info/rfc7841" xml:base="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7841.xml">
+        <reference anchor="RFC7841" target="https://www.rfc-editor.org/info/rfc7841">
           <front>
             <title>RFC Streams, Headers, and Boilerplates</title>
             <author fullname="J. Halpern" initials="J." role="editor" surname="Halpern"/>
@@ -518,7 +518,7 @@
           <seriesInfo name="RFC" value="7841"/>
           <seriesInfo name="DOI" value="10.17487/RFC7841"/>
         </reference>
-        <reference anchor="RFC7991" target="https://www.rfc-editor.org/info/rfc7991" xml:base="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7991.xml">
+        <reference anchor="RFC7991" target="https://www.rfc-editor.org/info/rfc7991">
           <front>
             <title>The "xml2rfc" Version 3 Vocabulary</title>
             <author fullname="P. Hoffman" initials="P." surname="Hoffman"/>
@@ -530,7 +530,7 @@
           <seriesInfo name="RFC" value="7991"/>
           <seriesInfo name="DOI" value="10.17487/RFC7991"/>
         </reference>
-        <reference anchor="I-D.ietf-procon-2026bis" target="https://datatracker.ietf.org/doc/html/draft-ietf-procon-2026bis-11" xml:base="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-procon-2026bis.xml">
+        <reference anchor="I-D.ietf-procon-2026bis" target="https://datatracker.ietf.org/doc/html/draft-ietf-procon-2026bis-11">
           <front>
             <title>The Internet Standards Process</title>
             <author fullname="Rich Salz" initials="R." surname="Salz">
@@ -549,7 +549,7 @@
       </references>
       <references anchor="informative-refs">
         <name>Informative References</name>
-        <reference anchor="RFC8788" target="https://www.rfc-editor.org/info/rfc8788" xml:base="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8788.xml">
+        <reference anchor="RFC8788" target="https://www.rfc-editor.org/info/rfc8788">
           <front>
             <title>Eligibility for the 2020-2021 Nominating Committee</title>
             <author fullname="B. Leiba" initials="B." surname="Leiba"/>
@@ -572,7 +572,7 @@
         <li>Rich Salz, for compatibility review with RFC 2026 successor</li>
       </ul>
     </section>
-    <section anchor="apdx-b" xml:base="sections/changelog.xml">
+    <section anchor="apdx-b">
       <!-- [RPC NOTE] The RPC is requested to removed this Appendix entire
      section prior RFC/BCP publication -->
     <name>Changes</name>
