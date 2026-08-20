@@ -6,8 +6,8 @@
     <li><t>Internet Engineering Steering Group (IESG),</t></li>
     <li><t>Internet Research Steering Group (IRSG)</t></li>
     <li><t>Independent Stream Editor (ISE)</t></li>
-    <li><t>all other stream maintaing bodies fulfilling 
-    the creteria defined by <xref target="RFC7841" section="2" /></t></li>
+    <li><t>all other stream maintaining bodies fulfilling the 
+    criteria by <xref target="RFC7841" section="2" /></t></li>
   </ul>
   <t>are requested to issue two Joint Statements:</t>
 
@@ -18,7 +18,7 @@
         <li><t>describing assurance and process validation criteria,</t></li>
         <li><t>keeping the statement up to date.</t></li>
       </ol>
-      <t>Only already piplined documents <bcp14>SHALL</bcp14> be published.</t>
+      <t>Only already pipelined documents <bcp14>SHALL</bcp14> be published.</t>
     </li>
     <li>
       <t><strong>Exceptional Process Baseline Requirements</strong></t>
@@ -30,8 +30,8 @@
         <t>The absolute baseline for these requirements is the direct 
         comparability to <xref target="I-D.ietf-procon-2026bis" section="8.7" />, 
         using the operational and consensus principles established in historical
-        precedents such as RFC 8788.</t>
-        <t>On complex topics the <xref target="RFC8788" /> IESG <bcp14>MAY</bcp14> consider consulting the IAB 
+        precedents such as <xref target="RFC8788" />.</t>
+        <t>On complex topics the IESG <bcp14>MAY</bcp14> consider consulting the IAB 
         for process validation.</t>
     </li>
   </ol>

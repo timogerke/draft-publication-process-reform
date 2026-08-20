@@ -13,18 +13,18 @@
           <ul>
             <li><t><strong>Queued for acknowledgement:</strong> Set automatically by the system 
             upon Working Group Chair submission, pending manual acknowledgment.</t></li>
-            <li><t><strong>Queued for review:</strong> Set automatically after acknowledgement,
+            <li><t><strong>Queued for review:</strong> Set automatically after acknowledgment,
             pending reviewing entity assignment.</t></li>
           </ul>
         </li>
         <li><t><strong>IESG ACK - Acknowledged:</strong> Indicates that the document 
-        was recieved has completed formal vlidation (Sanity Check). This state 
+        was received and has completed formal validation (Sanity Check). This state 
         <bcp14>SHALL NOT</bcp14> last longer than five business days.</t></li> 
         <li>
           <t><strong>IESG REV</strong></t>
           <ul>
             <li><t><strong>Assigned to reviewing entity:</strong> Indicates that the 
-            uncompromised reviewer entity - or, if triggered by the criteria as
+            uncompromised reviewing entity - or, if triggered by the criteria as
             defined in <xref target="sect-2-2" />, the parallel internal and external reviewer 
             entities - has taken formal charge of the ledger, initiating the
             confidential evaluation period.</t></li>
@@ -44,7 +44,7 @@
         <li>
         <t><strong>IESG OK</strong></t>
         <ul>
-      <li><t><strong>Document ready for publication:</strong>The activation of this 
+      <li><t><strong>Document ready for publication</strong>: The activation of this 
           state <bcp14>SHALL</bcp14> programmatically execute the immediate and 
           irreversible handover of the document object to the RFC Editor Queue.
           Upon execution, only the RPC <bcp14>SHALL</bcp14> be allowed to make

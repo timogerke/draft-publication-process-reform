@@ -15,7 +15,7 @@
         <t>Changes since draft-gerke-auth48-process-reform-01</t>
         <ul spacing="compact">
           <li><t>Added required Sections Introduction, Security and IANA considerations, References.</t></li>
-          <li><t>Updated two-stage system (<xref target="sect-2-1" /></t>
+          <li><t>Updated two-stage system (<xref target="sect-2-1" />)</t>
             <ol spacing="compact">
               <li>WG Stage</li>
               <li>IESG reviews and sets boilerplate</li>
@@ -23,7 +23,7 @@
           </li>
           <li><t>Added definition of total recusal to <xref target="sect-2-2"/>.</t></li>
           <li><t>Refined IAB States in <xref target="sect-4-2"/></t></li>
-          <li><t>Correctied/Added inter-section references</t></li>
+          <li><t>Corrected/Added inter-section references</t></li>
           <li><t>Inserted new <xref target="sect-5" /> Process-related permissions and duties of IESG, IAB and RPC</t></li>
         </ul>
       </li>
@@ -49,6 +49,14 @@
           <li><t>Modularized XML source to support collaborative contributions.</t></li>
           <li><t>Renamed Section 6 to "Stream Maintaining Bodies Considerations"</t></li>
           <li><t>Synced revisions datatracker with github</t></li>
+        </ul>
+      </li>
+      <li>
+        <t>Changes from draft-gerke-publication-process-reform-03</t>
+        <ul>
+          <li><t>Removed redundant 10 days timer in <xref target="sect-3-1" />.</t></li>
+	  <li><t>Wording corrections</t></li>
+	  <li><t>Updated Security Considerations</t></li>
         </ul>
       </li>
     </ul>

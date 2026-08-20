@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rfc xmlns:xi="http://www.w3.org/2001/XInclude" 
      category="bcp" 
-     docName="draft-gerke-publication-process-reform-03" 
+     docName="draft-gerke-publication-process-reform-04" 
      ipr="trust200902" 
      updates="7841"
      xml:lang="en" 
@@ -14,7 +14,7 @@
 <front>
   <title abbrev="Publication Process Reform">Publication Process Reform to prevent misuse of AUTH48 or equivalent states</title>
   
-  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-03"/>
+  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-04"/>
     
   <author fullname="Timo Gerke" initials="T." surname="Gerke" role="editor">
     <organization>Independent</organization>
@@ -27,10 +27,19 @@
     </address>
   </author>
 
-  <date year="2026" month="August" day="10" />
+  <date year="2026" month="August" day="19" />
   <workgroup>Individual Submission</workgroup>
 
-  <xi:include href="sections/abstract.xml" />
+<abstract>
+     <t>This document updates the AUTH48 or equivalent process by introducing 
+     deterministic state-integrity constraints within the IETF 
+     Datatracker architecture. It establishes automated validation 
+     milestones and explicit access controls to prevent late technical 
+     modifications after the Working Group Last Call, thereby 
+     safeguarding the Rough Consensus.</t>
+     
+     <t>This document updates RFC 7841.</t>
+</abstract>
 
 </front>
 
@@ -70,7 +79,7 @@
 
   </section>
 <section anchor="sect-5">
-<name>Process-related permission and duties of IESG, IAB and RPC</name>
+<name>Process-related permissions and duties of IESG, IAB and RPC</name>
   <xi:include href="sections/perm-and-duties-iesg.xml"/>
   <xi:include href="sections/perm-and-duties-iab.xml"/>
   <xi:include href="sections/perm-and-duties-rpc.xml"/> 
@@ -81,10 +90,9 @@
 
 <section anchor="sect-7">
 <name>Security Considerations</name>
-  <t>This document is a procedural governance rules document only. 
-  It does not define any new security systems, cryptographic primitives,
-  or protocol mechanisms. Therefore, no further security considerations 
-  need to be made.</t>
+<t>This document defines procedural governance rules only and does not
+introduce any security protocols or protocol parameters. Therefore,
+no further security considerations need to be made.</t>
 </section>
 <section anchor="sect-8">
 <name>IANA Considerations</name>
@@ -100,18 +108,18 @@
     <xi:include href="https://bib.ietf.org/public/rfc/bibxml9/reference.BCP.0014.xml" />
     <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7841.xml" />
     <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7991.xml" />
-    <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-procon-2026bis.xml"/>
   </references>
   <references anchor="informative-refs">
   <name>Informative References</name>
-    <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8788.xml"/>
+  <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8788.xml"/>
+  <xi:include href="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-procon-2026bis.xml"/>
   </references>
 </references>
   <section anchor="apdx-a">
   <name>Acknowledgements</name>
     <t>The author respectfully thanks:</t>      
     <ul>
-      <li>John Levine, for arciteectural review</li>
+      <li>John Levine, for architectural review</li>
       <li>Jean Mahoney, for operational requirements review</li>
       <li>Rich Salz, for compatibility review with RFC 2026 successor</li>
     </ul>

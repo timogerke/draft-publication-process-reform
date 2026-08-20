@@ -1,8 +1,8 @@
 <section anchor="sect-5-2">
     <name>Permissions and duties of the IAB</name>
     <t>
-      The Internet Architecture Board (IAB) serves as the supreme constitutional appeal 
-      and oversight body under <xref target="I-D.ietf-procon-2026bis" section="8.7" />. 
+      The Internet Architecture Board (IAB) serves as the structural governance 
+      and appeal body under <xref target="I-D.ietf-procon-2026bis" section="8.7" />. 
       The IAB's jurisdiction over active document streams is strictly bounded by 
       deterministic, non-extendable procedural timer events.
     </t>

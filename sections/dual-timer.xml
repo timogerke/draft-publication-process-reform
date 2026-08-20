@@ -1,10 +1,9 @@
 <section anchor="sect-3-1">
-<name>The Dual-timer system</name>
-  <t>The publication pipeline validation enforces the following dual-timer constraints:</t>
+<name>The Timer</name>
+  <t>The publication pipeline validation enforces the following timer constraint:</t>
   <ul>
     <li><t>30-day timer: A document <bcp14>MUST</bcp14> be finalized within 30 days from entering the AUTH48 or equivalent state.</t></li>
-    <li><t>10-day timer: This shorter window is automatically triggered once all authors have signaled all technical work is done.</t></li>
-    <li><t>The document is published at the end of timer one or two (whichever occurs first).</t></li>
+    <li><t>Once the timer has ended, the document SHALL be published.</t></li>
   </ul>
   <t>With explicit authorization of the IESG, the 30-day timer can be extended by maximum of ten days overall.</t>
 </section>

@@ -9,7 +9,7 @@
     <t>
       Upon triggering the state transition to <strong>IESG OK - Document Ready for publication</strong>, 
       all write and update permissions for the IESG regarding the document object model 
-      and its metadata in the database matrix <bcp14>MUST</bcp14> be instantly and irreversibly revoked 
+      and its metadata in the database matrix <bcp14>MUST</bcp14> be instantly and irrevocably revoked 
       by the automated backend middleware. The IESG <bcp14>SHALL NOT</bcp14> exert any 
       further administrative or informal influence over the document lifecycle, in strict 
       compliance with the absolute non-interference directives defined in <xref target="sect-4-1" />.
