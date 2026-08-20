@@ -228,8 +228,8 @@ Internet-Draft         Publication Process Reform            August 2026
 
    *  Once the timer has ended, the document SHALL be published.
 
-   With explicit authorization of the IESG, the 30-day timer can be
-   extended by maximum of ten days overall.
+   With explicit authorization of the IESG, the timer can be extended by
+   maximum of ten business days overall.
 
 3.2.  Normative Splitting
 

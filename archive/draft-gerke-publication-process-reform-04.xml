@@ -131,7 +131,7 @@
     </section>
     <section anchor="sect-3">
       <name>The Two-Pillar Model</name>
-      <section anchor="sect-3-1" xml:base="sections/dual-timer.xml">
+      <section anchor="sect-3-1" xml:base="sections/timer.xml">
         <name>The Timer</name>
         <t>The publication pipeline validation enforces the following timer constraint:</t>
         <ul>
@@ -139,10 +139,10 @@
             <t>30-day timer: A document <bcp14>MUST</bcp14> be finalized within 30 days from entering the AUTH48 or equivalent state.</t>
           </li>
           <li>
-            <t>Once the timer has ended, the document SHALL be published.</t>
+            <t>Once the timer has ended, the document <bcp14>SHALL</bcp14> be published.</t>
           </li>
         </ul>
-        <t>With explicit authorization of the IESG, the 30-day timer can be extended by maximum of ten days overall.</t>
+        <t>With explicit authorization of the IESG, the timer can be extended by maximum of ten business days overall.</t>
       </section>
       <section anchor="sect-3-2" xml:base="sections/normative-spliting.xml">
         <name>Normative Splitting</name>
