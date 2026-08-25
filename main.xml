@@ -27,7 +27,7 @@
     </address>
   </author>
 
-  <date year="2026" month="August" day="20" />
+  <date year="2026" month="September" day="20" />
   <workgroup>Individual Submission</workgroup>
 
 <abstract>
@@ -119,7 +119,6 @@ no further security considerations need to be made.</t>
   <name>Acknowledgements</name>
     <t>The author respectfully thanks:</t>      
     <ul>
-      <li>John Levine, for architectural review</li>
       <li>Jean Mahoney, for operational requirements review</li>
       <li>Rich Salz, for compatibility review with RFC 2026 successor</li>
     </ul>
