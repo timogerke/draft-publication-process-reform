@@ -4,9 +4,9 @@
 
 Individual Submission                                      T. Gerke, Ed.
 Internet-Draft                                               Independent
-Updates: 7841 (if approved)                               20 August 2026
+Updates: 7841 (if approved)                            20 September 2026
 Intended status: Best Current Practice                                  
-Expires: 21 February 2027
+Expires: 24 March 2027
 
 
   Publication Process Reform to prevent misuse of AUTH48 or equivalent
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 February 2027.
+   This Internet-Draft will expire on 24 March 2027.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Gerke                   Expires 21 February 2027                [Page 1]
+Gerke                     Expires 24 March 2027                 [Page 1]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    and restrictions with respect to this document.  Code Components
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Gerke                   Expires 21 February 2027                [Page 2]
+Gerke                     Expires 24 March 2027                 [Page 2]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    2).  Sequential verification of both stages by a non-conflicted Chair
@@ -165,9 +165,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 3]
+Gerke                     Expires 24 March 2027                 [Page 3]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    Upon entering the *IESG OK - Document ready for publication* state,
@@ -221,9 +221,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 4]
+Gerke                     Expires 24 March 2027                 [Page 4]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    *  Once the timer has ended, the document SHALL be published.
@@ -277,9 +277,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 5]
+Gerke                     Expires 24 March 2027                 [Page 5]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    Following Datatracker states MUST be instated or renamed:
@@ -333,9 +333,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 6]
+Gerke                     Expires 24 March 2027                 [Page 6]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    *  *IESG EPR - Exceptional Process requested by WG:* This state SHALL
@@ -389,9 +389,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 7]
+Gerke                     Expires 24 March 2027                 [Page 7]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
       -  *Decision made and published:* This state SHALL freeze the
@@ -445,9 +445,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 8]
+Gerke                     Expires 24 March 2027                 [Page 8]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
 5.3.  Permissions and duties of the RPC
@@ -501,9 +501,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027                [Page 9]
+Gerke                     Expires 24 March 2027                 [Page 9]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
    *  all other stream maintaining bodies fulfilling the criteria by
@@ -557,9 +557,9 @@ Internet-Draft         Publication Process Reform            August 2026
 
 
 
-Gerke                   Expires 21 February 2027               [Page 10]
+Gerke                     Expires 24 March 2027                [Page 10]
 
-Internet-Draft         Publication Process Reform            August 2026
+Internet-Draft         Publication Process Reform         September 2026
 
 
               Bradner, S., "Key words for use in RFCs to Indicate
@@ -597,8 +597,6 @@ Appendix A.  Acknowledgements
 
    The author respectfully thanks:
 
-   *  John Levine, for architectural review
-
    *  Jean Mahoney, for operational requirements review
 
    *  Rich Salz, for compatibility review with RFC 2026 successor
@@ -610,16 +608,16 @@ Appendix B.  Changes
 
       -  Introduced two-stage freeze system
 
-
-
-
-Gerke                   Expires 21 February 2027               [Page 11]
-
-Internet-Draft         Publication Process Reform            August 2026
-
-
       -  minor issues
    *  Changes since draft-gerke-auth48-process-reform-01
+
+
+
+Gerke                     Expires 24 March 2027                [Page 11]
+
+Internet-Draft         Publication Process Reform         September 2026
+
+
       -  Added required Sections Introduction, Security and IANA
          considerations, References.
       -  Updated two-stage system (Section 2.1)
@@ -669,4 +667,6 @@ Author's Address
 
 
 
-Gerke                   Expires 21 February 2027               [Page 12]
+
+
+Gerke                     Expires 24 March 2027                [Page 12]
