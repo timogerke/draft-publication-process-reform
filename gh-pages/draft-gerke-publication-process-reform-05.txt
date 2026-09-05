@@ -4,9 +4,9 @@
 
 Individual Submission                                      T. Gerke, Ed.
 Internet-Draft                                               Independent
-Updates: 7841 (if approved)                            20 September 2026
+Updates: 7841 (if approved)                             5 September 2026
 Intended status: Best Current Practice                                  
-Expires: 24 March 2027
+Expires: 9 March 2027
 
 
   Publication Process Reform to prevent misuse of AUTH48 or equivalent
@@ -39,7 +39,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 24 March 2027.
+   This Internet-Draft will expire on 9 March 2027.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 1]
+Gerke                     Expires 9 March 2027                  [Page 1]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 2]
+Gerke                     Expires 9 March 2027                  [Page 2]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -165,7 +165,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 3]
+Gerke                     Expires 9 March 2027                  [Page 3]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -221,7 +221,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 4]
+Gerke                     Expires 9 March 2027                  [Page 4]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -277,7 +277,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 5]
+Gerke                     Expires 9 March 2027                  [Page 5]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -333,7 +333,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 6]
+Gerke                     Expires 9 March 2027                  [Page 6]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -389,7 +389,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 7]
+Gerke                     Expires 9 March 2027                  [Page 7]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -445,7 +445,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 8]
+Gerke                     Expires 9 March 2027                  [Page 8]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -501,7 +501,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                 [Page 9]
+Gerke                     Expires 9 March 2027                  [Page 9]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -557,7 +557,7 @@ Internet-Draft         Publication Process Reform         September 2026
 
 
 
-Gerke                     Expires 24 March 2027                [Page 10]
+Gerke                     Expires 9 March 2027                 [Page 10]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -613,7 +613,7 @@ Appendix B.  Changes
 
 
 
-Gerke                     Expires 24 March 2027                [Page 11]
+Gerke                     Expires 9 March 2027                 [Page 11]
 
 Internet-Draft         Publication Process Reform         September 2026
 
@@ -669,4 +669,4 @@ Author's Address
 
 
 
-Gerke                     Expires 24 March 2027                [Page 12]
+Gerke                     Expires 9 March 2027                 [Page 12]
