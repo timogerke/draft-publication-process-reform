@@ -652,6 +652,10 @@ Internet-Draft         Publication Process Reform         September 2026
       -  Wording corrections
 
       -  Updated Security Considerations
+   *  Changes from draft-gerke-publication-process-reform-04
+      -  Wording coorections
+
+      -  Rebuild was requird caused by file renaming
 
 Author's Address
 
@@ -660,10 +664,6 @@ Author's Address
    Hamburg
    Germany
    Email: ietf@timogerke.de
-
-
-
-
 
 
 
