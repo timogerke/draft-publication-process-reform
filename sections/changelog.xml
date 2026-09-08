@@ -55,9 +55,16 @@
         <t>Changes from draft-gerke-publication-process-reform-03</t>
         <ul>
           <li><t>Removed redundant 10 days timer in <xref target="sect-3-1" />.</t></li>
-	  <li><t>Wording corrections</t></li>
-	  <li><t>Updated Security Considerations</t></li>
+       	  <li><t>Wording corrections</t></li>
+       	  <li><t>Updated Security Considerations</t></li>
         </ul>
+      </li>
+      <li>
+	<ul>
+          <t>Changes from draft-gerke-publication-process-reform-04</t>
+          <li><t>Wording coorections</t></li>
+	  <li><t>Rebuild was requird caused by file renaming</t></li>
+	</ul>
       </li>
     </ul>
   </section>
