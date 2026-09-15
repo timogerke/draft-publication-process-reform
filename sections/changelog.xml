@@ -61,9 +61,19 @@
       </li>
       <li>
         <t>Changes from draft-gerke-publication-process-reform-04</t>
-	<ul>
+        <ul>
           <li><t>Wording coorections</t></li>
-	  <li><t>Rebuild was requird caused by file renaming</t></li>
+          <li><t>Rebuild was requird caused by file renaming</t></li>
+        </ul>
+      </li>
+      <li>
+        <t>Changes since draft-gerke-publication-process-reform-05</t>
+        <ul>
+	  <li><t>Slight updates to sections/iesg-actions.xml</t></li>
+	  <li><t>Now fully compliant to idnits3 submission mode</t></li>
+	  <li><t>Moved RFC 7991 to Informative References</t></li>
+	  <li><t>Updated workflow file to execute workflow only on request</t></li>
+	  <li><t>Changed unordered lists in section 4.1 and 4.2 to definition lists</t></li>
 	</ul>
       </li>
     </ul>

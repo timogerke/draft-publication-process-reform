@@ -22,8 +22,8 @@ charters to prevent late, uncoordinated changes in the publication pipeline.
    Datatracker state machine (strictly separated to prevent specification bloat).
 * **Review Policy:**
   * Initially managed by the author. 
-  *** As the contributor base expands, a Double-Peer-Review policy will be enforced
-  (requiring a Sign-Off by at least two independent supporters before merging). ***
+  ***As the contributor base expands, a Double-Peer-Review policy will be enforced
+  (requiring a Sign-Off by at least two independent supporters before merging).***
 
 ## Contribution Guidelines
 We are open to **any kind of contribution** (including editorial text sharpening). 

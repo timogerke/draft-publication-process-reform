@@ -12,35 +12,41 @@
    restrict the IAB stream to architectural verification, structural consultation 
    metrics, and unalterable final publishing clearances. The following granular 
    states <bcp14>SHALL</bcp14> be instated:</t>
-      <ul>
-        <li><t><strong>IAB QUE - Queued for process validation:</strong> This state <bcp14>SHALL</bcp14> be
-            set when the IESG sent a process validation request. The state <bcp14>SHALL</bcp14>
-            be set automatically after the request has been placed in the queue.</t></li>
-        <li><t><strong>IAB ACK - Acknowledged:</strong> This state <bcp14>SHALL</bcp14> be set manually only by the chair
-            or any chair-authorized member. This state <bcp14>SHOULD NOT</bcp14> last longer than 5 business days.</t></li>
-        <li>
-          <t><strong>IAB CON</strong></t>
-          <ul>
-        <li><t><strong>Consultation request received from IESG:</strong> This state <bcp14>SHALL</bcp14>
-             be set after the IESG formally requested an IAB consultation.</t></li>
-            <li><t><strong>Consultation scheduled:</strong> This state <bcp14>SHALL</bcp14> be set when
-                IAB and IESG made an appointment for consultation.</t></li>
-          </ul>
-        </li> 
-    <li>
-          <t><strong>IAB OK</strong></t>
-          <ul>
-            <li><t><strong>Decision made and published:</strong> This state <bcp14>SHALL</bcp14> 
-            freeze the final judgment of the board and <bcp14>SHALL</bcp14> immediately 
-            and permanently commit the unalterable response into the public Datatracker log.</t></li>
-            <li><t><strong>Document sent to IESG for publication:</strong> This state <bcp14>SHALL</bcp14> 
-        activate the executive transfer of the cleared technical or architectural payload back
-        to the operational stream for final printing.</t></li>
-            <li><t><strong>Exceptional process validated, clearance can be granted:</strong> 
-            This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
-        a disputed out-of-band mechanism, formally notifying the IESG that executive 
-        clearance may be executed.</t></li>
-          </ul>
-        </li>
-      </ul>
+      <dl newline="true">
+       	<dt><strong>IAB QUE - Queued for process validation</strong></dt>
+	  <dd>This state <bcp14>SHALL</bcp14> be
+              set when the IESG sent a process validation request. The state <bcp14>SHALL</bcp14>
+              be set automatically after the request has been placed in the queue.
+      	  </dd>
+        <dt><strong>IAB ACK - Acknowledged</strong></dt>
+      	    <dd>This state <bcp14>SHALL</bcp14> be set manually only by the chair
+                or any chair-authorized member. This state <bcp14>SHOULD NOT</bcp14> 
+      	    	last longer than 5 business days.
+      	    </dd>
+        <dt><strong>IAB CON - Consultation request received from IESG</strong></dt>
+          <dd>
+            This state <bcp14>SHALL</bcp14> be set after the IESG formally requested an IAB consultation.
+          </dd>
+        <dt><strong>IAB CON - Consultation scheduled</strong></dt>
+       	  <dd>
+      	    This state <bcp14>SHALL</bcp14> be set when
+      	    IAB and IESG made an appointment for consultation.
+          </dd>
+        <dt><strong>IAB OK - Decision made an published</strong></dt>
+      	  <dd>
+            This state <bcp14>SHALL</bcp14> freeze the final judgment of the board and 
+      	    <bcp14>SHALL</bcp14> immediately and permanently commit the unalterable response
+            into the public Datatracker log.
+      	  </dd>
+	  <dt><strong>IAB OK - Document sent to IESG for publication</strong></dt> 
+	    <dd>
+	      This state <bcp14>SHALL</bcp14> activate the executive transfer of the cleared
+	      technical or architectural payload back to the operational stream for final printing.
+	    </dd>
+	    <dt><strong>Exceptional process validated, clearance can be granted:</strong></dt> 
+              <dd>This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
+                  a disputed out-of-band mechanism, formally notifying the IESG that executive 
+                  clearance may be executed.
+	      </dd>
+          </dl>
     </section>
