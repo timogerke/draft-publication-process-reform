@@ -61,9 +61,16 @@
       </li>
       <li>
         <t>Changes from draft-gerke-publication-process-reform-04</t>
-	<ul>
+        <ul>
           <li><t>Wording coorections</t></li>
-	  <li><t>Rebuild was requird caused by file renaming</t></li>
+          <li><t>Rebuild was requird caused by file renaming</t></li>
+        </ul>
+      </li>
+      <li>
+        <t>Changes since draft-gerke-publication-process-reform-05</t>
+        <ul>
+	  <li><t>Slight updates to sections/iesg-actions.xml</t></li>
+	  <li><t>Now fully compliant to idnits3 submission mode</t></li>
 	</ul>
       </li>
     </ul>
