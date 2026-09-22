@@ -43,10 +43,10 @@
 	      This state <bcp14>SHALL</bcp14> activate the executive transfer of the cleared
 	      technical or architectural payload back to the operational stream for final printing.
 	    </dd>
-	    <dt><strong>Exceptional process validated, clearance can be granted:</strong></dt> 
-              <dd>This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
-                  a disputed out-of-band mechanism, formally notifying the IESG that executive 
-                  clearance may be executed.
-	      </dd>
+	  <dt><strong>IAB OK - Exceptional process validated, clearance can be granted:</strong></dt> 
+            <dd>This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
+                a disputed out-of-band mechanism, formally notifying the IESG that executive 
+                clearance may be executed.
+	    </dd>
           </dl>
     </section>

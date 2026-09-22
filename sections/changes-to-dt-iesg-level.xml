@@ -3,9 +3,12 @@
       <t>The IESG <bcp14>MAY</bcp14> decide to initiate a parallel dual-review on 
       complex topics consisting of two isolated entities, where at 
       least one entity <bcp14>MUST</bcp14> be external. This decision 
-      <bcp14>MUST</bcp14> be formally documented. If all Area Directors
-      assigned to the document are conflicted or unavailable, the model as
-      described above is <bcp14>MUST</bcp14> be applied.</t>
+      <bcp14>MUST</bcp14> be formally documented. If all Area Directors 
+      assigned to the document are conflicted or unavailable, the formal  
+      escalation model specified in <xref target="sect-3-3" /> <bcp14>MUST</bcp14> 
+      be applied. In this scenario, the approval authority <bcp14>SHALL</bcp14> be escalated 
+      to the Internet Architecture Board (IAB) to appoint a neutral, independent 
+      reviewer, ensuring that the parallel dual-review metrics remain uncompromised.</t>
       <t>Following Datatracker states <bcp14>MUST</bcp14> be instated or renamed:</t>
      <dl newline="true">
        <dt><strong>IESG QUE - Qeued for acknowledgement</strong></dt>
