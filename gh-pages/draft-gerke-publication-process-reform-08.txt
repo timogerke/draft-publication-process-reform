@@ -178,7 +178,7 @@ Internet-Draft         Publication Process Reform         September 2026
    Upon entering the *IESG OK - Document ready for publication* state,
    the global QA process is complete, and the document SHALL be
    transferred to the RFC Production Center for final editorial
-   processing and üublication .
+   processing and publication .
 
 2.2.  Conflict of Interest
 

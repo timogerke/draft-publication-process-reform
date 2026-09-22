@@ -40,6 +40,6 @@
    Upon entering the <strong>IESG OK - Document ready for publication</strong> state,
    the global QA process is complete, and the document <bcp14>SHALL</bcp14>
    be transferred to the RFC Production Center for final editorial processing
-   and publication .
+   and publication.
   </t>
 </section>
