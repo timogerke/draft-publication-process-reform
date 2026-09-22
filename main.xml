@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rfc xmlns:xi="http://www.w3.org/2001/XInclude" 
      category="bcp" 
-     docName="draft-gerke-publication-process-reform-07" 
+     docName="draft-gerke-publication-process-reform-08" 
      ipr="trust200902" 
      updates="7841"
      xml:lang="en" 
@@ -13,7 +13,7 @@
 <front>
   <title abbrev="Publication Process Reform">Publication Process Reform to prevent misuse of AUTH48 or equivalent states</title>
   
-  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-07"/>
+  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-08"/>
     
   <author fullname="Timo Gerke" initials="T." surname="Gerke" role="editor">
     <organization>Independent</organization>
