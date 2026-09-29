@@ -43,7 +43,7 @@ jobs:
       - name: Expand, Cleanup and Compile XML
         run: |
           xml2rfc --expand --allow-local-file-access main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
-          sed -Ei '/<\!DOCTYPE ([[:print:]])*( )?>/d' archive/${DRAFT_NAME}-${REVISION}.xml
+          sed -Ei '/<\!DOCTYPE ([[:print:]])*( )?>/d; s/ xml:base="[^"]*"//g' archive/${DRAFT_NAME}-${REVISION}.xml
           xml2rfc --v3 --text archive/${DRAFT_NAME}-${REVISION}.xml -o gh-pages/${DRAFT_NAME}-${REVISION}.txt
 
       - name: Commit and Push Changes to Repository
