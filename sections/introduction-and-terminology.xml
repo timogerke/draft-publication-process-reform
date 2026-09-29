@@ -1,17 +1,21 @@
 <section anchor="sect-1">
 <name>Introduction</name> 
-    <t>The objective of this document is to update the publication process regulations 
+  <t>
+    The objective of this document is to update the publication process regulations 
     defined in <xref target="RFC7841"/>. Historically, this phase has lacked 
     state-integrity constraints, allowing late-stage technical modifications. 
     This document establishes a deterministic framework to prevent Working Group 
     bypassing and safeguard the consensus. By applying a two-stage freeze system 
-    within the Datatracker architecture, these vulnerabilities are resolved.</t>
+    within the Datatracker architecture, these vulnerabilities are resolved.
+  </t>
 
-    <t>Specifically, this mechanism enforces an immediate technical lock on core   
+  <t>
+    Specifically, this mechanism enforces an immediate technical lock on core   
     specifications (Stage 1) while isolating a volatile window for strictly 
     editorial adjustments by the RFC Production Center (Stage 2). Sequential 
     verification of both stages by a non-conflicted Chair or AD triggers automated 
-    consensus validation and Datatracker state processing metrics.</t>
+    consensus validation and Datatracker state processing metrics.
+  </t>
  
   <section anchor="sect-1-1">
   <name>Terminology</name>
@@ -20,5 +24,18 @@
     "<bcp14>RECOMMENDED</bcp14>", "<bcp14>NOT RECOMMENDED</bcp14>", "<bcp14>MAY</bcp14>", and "<bcp14>OPTIONAL</bcp14>"
     in this document are to be interpreted as described in <xref target="BCP14" /> when, and only when, 
     they appear in all capitals, as shown here.</t>
+  </section>
+  <section anchor="sect-1-2">
+  <name>Relationship to RFC 6359</name>
+    <t>
+      <xref target="RFC6359" /> defines the requirements for the IETF Datatracker to include 
+      processing information and track external states after a document leaves 
+      the IESG. This document updates <xref target="RFC6359" />  by introducing deterministic, 
+      system-enforced state-integrity constraints and automated milestones 
+      within this tracking pipeline. It supplements the existing transitions 
+      with algorithmic validation boundaries, enforcing programmatic constraints 
+      during the transition into and execution of the final publication 
+      clearance states.
+    </t>
   </section>
 </section>

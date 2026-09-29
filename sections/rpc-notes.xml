@@ -1,0 +1,16 @@
+<section anchor="rpc-notes" removeInRFC="true">
+<name>Notes to the RPC</name>    
+  <t>The RPC is requested to:</t>	
+  <ul>
+    <li>
+      <t>remove Appendices B and C prior to publication.</t>
+    </li>
+    <li>
+      <t>sync the publication with RFC2026bis.</t>
+    </li>
+    <li>
+      <t>replace the normative reference to RFC2026bis
+        with its assigned RFC number.</t>
+    </li>
+  </ul>  
+</section>

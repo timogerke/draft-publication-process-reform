@@ -11,7 +11,7 @@
       reviewer, ensuring that the parallel dual-review metrics remain uncompromised.</t>
       <t>Following Datatracker states <bcp14>MUST</bcp14> be instated or renamed:</t>
      <dl newline="true">
-       <dt><strong>IESG QUE - Qeued for acknowledgement</strong></dt>
+       <dt><strong>IESG QUE - Queued for acknowledgement</strong></dt>
          <dd>
            Set automatically by the system upon Working Group Chair 
            submission, pending manual acknowledgment.
