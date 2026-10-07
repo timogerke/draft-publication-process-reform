@@ -88,7 +88,8 @@
         <li><t>Updated Abstract</t></li>
        	<li><t>Added RFC 6359 to updates atrribute</t></li>
 	<li><t>Added section 1.2 "Relationship to RFC 6359"</t></li>
-	<li><t>Added Appendix C "Notes to the RPC"</t></li>
+	<li><t>Added Appendix B "Implementation Notes (informative)</t></li>
+	<li><t>Added Appendix D "Notes to the RPC"</t></li>
        </ul>
      </li>
     </ul>

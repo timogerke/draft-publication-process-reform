@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rfc xmlns:xi="http://www.w3.org/2001/XInclude" 
      category="bcp" 
-     docName="draft-gerke-publication-process-reform-09" 
+     docName="draft-gerke-publication-process-reform-10" 
      ipr="trust200902" 
      updates="6359, 7841"
      xml:lang="en" 
@@ -13,7 +13,7 @@
 <front>
   <title abbrev="Publication Process Reform">Publication Process Reform to prevent misuse of AUTH48 or equivalent states</title>
   
-  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-09"/>
+  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-10"/>
     
   <author fullname="Timo Gerke" initials="T." surname="Gerke" role="editor">
     <organization>Independent</organization>
@@ -26,10 +26,12 @@
     </address>
   </author>
 
-  <date year="2026" month="September" day="29" />
+  <date year="2026" month="October" day="07" />
   <workgroup>Individual Submission</workgroup>
-
-  <xi:include href="sections/abstract.xml" />
+  
+  <abstract>
+	  <xi:include href="sections/abstract.xml" xpointer="xpointer(/abstract/*)" />
+  </abstract>
 
 </front>
 
@@ -92,6 +94,7 @@ no further security considerations need to be made.</t>
 <back>
 <displayreference target="I-D.ietf-procon-2026bis" to="RFC2026bis" />
 <references anchor="refs">
+	
 <name>References</name>
   <references anchor="normative-refs">
   <name>Normative References</name>
@@ -106,7 +109,7 @@ no further security considerations need to be made.</t>
     <xi:include href="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8788.xml"/> 
   </references>
 </references>
-  <section anchor="apdx-a">
+  <section anchor="acknowledgements">
   <name>Acknowledgements</name>
     <t>The author respectfully thanks:</t>      
     <ul>
@@ -114,6 +117,7 @@ no further security considerations need to be made.</t>
       <li>Rich Salz, for compatibility review with RFC 2026 successor</li>
     </ul>
   </section>
+  <xi:include href="sections/implementation-notes.xml" />
   <xi:include href="sections/changelog.xml" />
   <xi:include href="sections/rpc-notes.xml" />
 </back>

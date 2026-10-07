@@ -54,17 +54,21 @@
       	    object to the RFC Editor Queue. Upon execution, only the RPC 
 	    <bcp14>SHALL</bcp14> be allowed to make changes to the document.
          </dd>
-     <dt><strong>IESG OK - Process clearance granted</strong></dt>
+     <dt><strong>IESG OK - Process variance clearance granted</strong></dt>
         <dd>   
           This state <bcp14>SHALL</bcp14> activate the
           executive authorization for the requested procedural variance,
       	  concluding the IESG-level exceptional review.
       	</dd>
-     <dt><strong>IESG EPR - Exceptional Process requested by WG</strong></dt>
+     <dt><strong>IESG PVR - Process variance requested by WG</strong></dt>
         <dd>This state <bcp14>SHALL</bcp14> record the transparent import
             of a working group's formal petition  for an out-of-band mechanism 
             outside the scope of <xref target="I-D.ietf-procon-2026bis" />.
-       </dd>
+        </dd>
+      <dt><strong>IESG PVR - Process variance sent to IAB for validation</strong></dt>
+      <dd>This state <bcp14>SHALL</bcp14> record that the IESG was not able to
+          validate the variance on their own and requested the IAB to validate it.
+      </dd>
    </dl>
    <t>On complex topics, the IESG <bcp14>MAY</bcp14> consider consulting the IAB for process validation.
    The IESG <bcp14>SHALL NOT</bcp14> be authorized to disclose the name of the reviewing
