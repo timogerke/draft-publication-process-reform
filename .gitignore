@@ -13,3 +13,5 @@ draft*.txt
 draft*.pdf
 !archive/*
 !gh-pages/*
+*.old
+*.old.xml

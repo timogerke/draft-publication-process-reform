@@ -82,7 +82,7 @@
           <bcp14>MUST</bcp14> be applied.</t>
         <t>After Both Stages have sucessfully been completed the following 
     <strong>boilerplate</strong> <bcp14>SHALL</bcp14> at the end of the
-	    "Status Of this Memo" section:
+        "Status Of this Memo" section:
         </t>
         <blockquote>
           <t>
@@ -206,13 +206,13 @@
          </dd>
           <dt><strong>IESG OK - Queued for review</strong></dt>
           <dd>Set automatically after acknowledgment, pending 
-	     reviewing entity assignment.
+         reviewing entity assignment.
           </dd>
           <dt><strong>IESG ACK - Acknowledged</strong></dt>
           <dd>Indicates that the document was received and has completed formal 
-	      validation (Sanity Check). This state <bcp14>SHALL NOT</bcp14> 
-	      last longer than five business days.
-	    </dd>
+          validation (Sanity Check). This state <bcp14>SHALL NOT</bcp14> 
+          last longer than five business days.
+        </dd>
           <dt><strong>IESG REV - Assigned to review entity</strong></dt>
           <dd>Indicates that the uncompromised reviewing entity - or, if triggered by the criteria as
                defined in <xref target="sect-2-2"/>, the parallel internal and external reviewer 
@@ -224,30 +224,30 @@
              Confirms that the collective body has cleared the entity without technical
              caveats and that all active parallel review metrics show no 
              unresolved structural variance.
-	   </dd>
+       </dd>
           <dt><strong>IESG REV - Review done, WG action required</strong></dt>
           <dd>This state <bcp14>SHALL</bcp14> log a structured list of formal 
-	      deficiencies within the Datatracker, which <bcp14>SHALL</bcp14> 
-	      automatically return the docket to the community for resolution.
-	   </dd>
+          deficiencies within the Datatracker, which <bcp14>SHALL</bcp14> 
+          automatically return the docket to the community for resolution.
+       </dd>
           <dt><strong>IESG REV - WG action verified, no objections</strong></dt>
           <dd>
-	    This state <bcp14>SHALL</bcp14> document the final and successful 
-	    collective validation of the working group's delta-revisions against the 
-	    logged deficiencies.
+        This state <bcp14>SHALL</bcp14> document the final and successful 
+        collective validation of the working group's delta-revisions against the 
+        logged deficiencies.
           </dd>
           <dt><strong>IESG OK - Document ready for publication</strong></dt>
           <dd>The activation of this state <bcp14>SHALL</bcp14> programmatically 
-      	    execute the immediate and irreversible handover of the document 
-      	    object to the RFC Editor Queue. Upon execution, only the RPC 
-	    <bcp14>SHALL</bcp14> be allowed to make changes to the document.
+              execute the immediate and irreversible handover of the document 
+              object to the RFC Editor Queue. Upon execution, only the RPC 
+        <bcp14>SHALL</bcp14> be allowed to make changes to the document.
          </dd>
           <dt><strong>IESG OK - Process clearance granted</strong></dt>
           <dd>   
           This state <bcp14>SHALL</bcp14> activate the
           executive authorization for the requested procedural variance,
-      	  concluding the IESG-level exceptional review.
-      	</dd>
+            concluding the IESG-level exceptional review.
+          </dd>
           <dt><strong>IESG EPR - Exceptional Process requested by WG</strong></dt>
           <dd>This state <bcp14>SHALL</bcp14> record the transparent import
             of a working group's formal petition  for an out-of-band mechanism 
@@ -276,37 +276,37 @@
           <dd>This state <bcp14>SHALL</bcp14> be
               set when the IESG sent a process validation request. The state <bcp14>SHALL</bcp14>
               be set automatically after the request has been placed in the queue.
-      	  </dd>
+            </dd>
           <dt><strong>IAB ACK - Acknowledged</strong></dt>
           <dd>This state <bcp14>SHALL</bcp14> be set manually only by the chair
                 or any chair-authorized member. This state <bcp14>SHOULD NOT</bcp14> 
-      	    	last longer than 5 business days.
-      	    </dd>
+                  last longer than 5 business days.
+              </dd>
           <dt><strong>IAB CON - Consultation request received from IESG</strong></dt>
           <dd>
             This state <bcp14>SHALL</bcp14> be set after the IESG formally requested an IAB consultation.
           </dd>
           <dt><strong>IAB CON - Consultation scheduled</strong></dt>
           <dd>
-      	    This state <bcp14>SHALL</bcp14> be set when
-      	    IAB and IESG made an appointment for consultation.
+              This state <bcp14>SHALL</bcp14> be set when
+              IAB and IESG made an appointment for consultation.
           </dd>
           <dt><strong>IAB OK - Decision made an published</strong></dt>
           <dd>
             This state <bcp14>SHALL</bcp14> freeze the final judgment of the board and 
-      	    <bcp14>SHALL</bcp14> immediately and permanently commit the unalterable response
+              <bcp14>SHALL</bcp14> immediately and permanently commit the unalterable response
             into the public Datatracker log.
-      	  </dd>
+            </dd>
           <dt><strong>IAB OK - Document sent to IESG for publication</strong></dt>
           <dd>
-	      This state <bcp14>SHALL</bcp14> activate the executive transfer of the cleared
-	      technical or architectural payload back to the operational stream for final printing.
-	    </dd>
+          This state <bcp14>SHALL</bcp14> activate the executive transfer of the cleared
+          technical or architectural payload back to the operational stream for final printing.
+        </dd>
           <dt><strong>IAB OK - Exceptional process validated, clearance can be granted:</strong></dt>
           <dd>This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
                 a disputed out-of-band mechanism, formally notifying the IESG that executive 
                 clearance may be executed.
-	    </dd>
+        </dd>
         </dl>
       </section>
     </section>

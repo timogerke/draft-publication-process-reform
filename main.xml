@@ -30,7 +30,7 @@
   <workgroup>Individual Submission</workgroup>
   
   <abstract>
-	  <xi:include href="sections/abstract.xml" xpointer="xpointer(/abstract/*)" />
+      <xi:include href="sections/abstract.xml" xpointer="xpointer(/abstract/*)" />
   </abstract>
 
 </front>
@@ -94,7 +94,7 @@ no further security considerations need to be made.</t>
 <back>
 <displayreference target="I-D.ietf-procon-2026bis" to="RFC2026bis" />
 <references anchor="refs">
-	
+    
 <name>References</name>
   <references anchor="normative-refs">
   <name>Normative References</name>

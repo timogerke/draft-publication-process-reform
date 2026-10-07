@@ -15,8 +15,8 @@
           <li><t>Added required Sections Introduction, Security and IANA considerations, References.</t></li>
           <li><t>Updated two-stage system (<xref target="sect-2-1" />)</t>
             <ol spacing="compact">
-	      <li><t>WG Stage</t></li>
-	      <li><t>IESG reviews and sets boilerplate</t></li>
+          <li><t>WG Stage</t></li>
+          <li><t>IESG reviews and sets boilerplate</t></li>
             </ol>
           </li>
           <li><t>Added definition of total recusal to <xref target="sect-2-2"/>.</t></li>
@@ -53,8 +53,8 @@
         <t>Changes from draft-gerke-publication-process-reform-03</t>
         <ul>
           <li><t>Removed redundant 10 days timer in <xref target="sect-3-1" />.</t></li>
-       	  <li><t>Wording corrections</t></li>
-       	  <li><t>Updated Security Considerations</t></li>
+             <li><t>Wording corrections</t></li>
+             <li><t>Updated Security Considerations</t></li>
         </ul>
       </li>
       <li>
@@ -67,29 +67,29 @@
        <li>
         <t>Changes since draft-gerke-publication-process-reform-05</t>
         <ul>
-	  <li><t>Slight updates to sections/iesg-actions.xml</t></li>
-     	  <li><t>Now fully compliant to idnits3 submission mode</t></li>
-      	  <li><t>Moved RFC 7991 to Informative References</t></li>
-      	  <li><t>Updated workflow file to execute workflow only on request</t></li>
-      	  <li><t>Changed unordered lists in section 4.1 and 4.2 to definition lists</t></li>
-     	</ul>
+      <li><t>Slight updates to sections/iesg-actions.xml</t></li>
+           <li><t>Now fully compliant to idnits3 submission mode</t></li>
+            <li><t>Moved RFC 7991 to Informative References</t></li>
+            <li><t>Updated workflow file to execute workflow only on request</t></li>
+            <li><t>Changed unordered lists in section 4.1 and 4.2 to definition lists</t></li>
+         </ul>
       </li>
       <li>
         <t>Changes since draft-gerke-publication-process.reform-06</t>
-      	<ul>
-      	  <li><t>Fixed Crossreferencing</t></li>
-     	  <li><t>Fixed Possible missunderstandings in Sections 2 and 4</t></li>
+          <ul>
+            <li><t>Fixed Crossreferencing</t></li>
+           <li><t>Fixed Possible missunderstandings in Sections 2 and 4</t></li>
           <li><t>Fiexd logical issues in Section 2</t></li>
-       	</ul>
+           </ul>
      </li>
      <li>
        <t>Changes since draft-gerke-publication-process-reform-07</t>
        <ul>
         <li><t>Updated Abstract</t></li>
-       	<li><t>Added RFC 6359 to updates atrribute</t></li>
-	<li><t>Added section 1.2 "Relationship to RFC 6359"</t></li>
-	<li><t>Added Appendix B "Implementation Notes (informative)</t></li>
-	<li><t>Added Appendix D "Notes to the RPC"</t></li>
+           <li><t>Added RFC 6359 to updates atrribute</t></li>
+    <li><t>Added section 1.2 "Relationship to RFC 6359"</t></li>
+    <li><t>Added Appendix B "Implementation Notes (informative)</t></li>
+    <li><t>Added Appendix D "Notes to the RPC"</t></li>
        </ul>
      </li>
     </ul>

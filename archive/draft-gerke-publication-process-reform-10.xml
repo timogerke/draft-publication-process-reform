@@ -1,11 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE rfc SYSTEM "rfc2629-xhtml.ent">
-<rfc xmlns:xi="http://www.w3.org/2001/XInclude" category="bcp" docName="draft-gerke-publication-process-reform-06" ipr="trust200902" updates="7841" xml:lang="en" version="3" consensus="true">
+<rfc xmlns:xi="http://www.w3.org/2001/XInclude" category="bcp" docName="draft-gerke-publication-process-reform-10" ipr="trust200902" updates="6359, 7841" xml:lang="en" version="3" consensus="true">
   <?rfc compact="yes" subcompact="no" toccompact="yes"?>
 
 <front>
     <title abbrev="Publication Process Reform">Publication Process Reform to prevent misuse of AUTH48 or equivalent states</title>
-    <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-06"/>
+    <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-10"/>
     <author fullname="Timo Gerke" initials="T." surname="Gerke" role="editor">
       <organization>Independent</organization>
       <address>
@@ -16,7 +15,7 @@
         <email>ietf@timogerke.de</email>
       </address>
     </author>
-    <date year="2026" month="September" day="19"/>
+    <date year="2026" month="October" day="07"/>
     <workgroup>Individual Submission</workgroup>
     <abstract>
       <t>This document updates the AUTH48 or equivalent process by introducing 
@@ -25,24 +24,34 @@
      milestones and explicit access controls to prevent late technical 
      modifications after the Working Group Last Call, thereby 
      safeguarding the Rough Consensus.</t>
-      <t>This document updates RFC 7841.</t>
+      <t>The deterministic state-integrity constraints and automated milestones 
+     defined herein apply programmatically across the core processing 
+     streams already defined or established in the future.</t>
+      <t>This document updates RFC 6359 and RFC 7841.</t>
     </abstract>
   </front>
   <middle>
-    <section anchor="sect-1" xml:base="sections/introduction-and-terminology.xml">
-      <name>Introduction</name>
-      <t>The objective of this document is to update the publication process regulations 
-    defined in <xref target="RFC7841"/>. Historically, this phase has lacked 
-    state-integrity constraints, allowing late-stage technical modifications. 
-    This document establishes a deterministic framework to prevent Working Group 
-    bypassing and safeguard the consensus. By applying a two-stage freeze system 
-    within the Datatracker architecture, these vulnerabilities are resolved.</t>
-      <t>Specifically, this mechanism enforces an immediate technical lock on core   
-    specifications (Stage 1) while isolating a volatile window for strictly 
-    editorial adjustments by the RFC Production Center (Stage 2). Sequential 
-    verification of both stages by a non-conflicted Chair or AD triggers automated 
-    consensus validation and Datatracker state processing metrics.</t>
+    <section anchor="sect-1">
+      <name>Introduction, Terminolgy and Relationship to RFC 6359</name>
       <section anchor="sect-1-1">
+        <name>Introduction</name>
+        <t>
+      The objective of this document is to update the publication process regulations 
+      defined in <xref target="RFC7841"/>. Historically, this phase has lacked 
+      state-integrity constraints, allowing late-stage technical modifications. 
+      This document establishes a deterministic framework to prevent Working Group 
+      bypassing and safeguard the consensus. By applying a two-stage freeze system 
+      within the Datatracker architecture, these vulnerabilities are resolved.
+        </t>
+        <t>
+      Specifically, this mechanism enforces an immediate technical lock on core   
+      specifications (Stage 1) while isolating a volatile window for strictly 
+      editorial adjustments by the RFC Production Center (Stage 2). Sequential 
+      verification of both stages by a non-conflicted Chair or AD triggers automated 
+      consensus validation and Datatracker state processing metrics.
+        </t>
+      </section>
+      <section anchor="sect-1-2">
         <name>Terminology</name>
         <t>The key words "<bcp14>MUST</bcp14>", "<bcp14>MUST NOT</bcp14>", "<bcp14>REQUIRED</bcp14>", 
     "<bcp14>SHALL</bcp14>", "<bcp14>SHALL NOT</bcp14>", "<bcp14>SHOULD</bcp14>", "<bcp14>SHOULD NOT</bcp14>",
@@ -50,13 +59,26 @@
     in this document are to be interpreted as described in <xref target="BCP14"/> when, and only when, 
     they appear in all capitals, as shown here.</t>
       </section>
+      <section anchor="sect-1-3">
+        <name>Relationship to RFC 6359</name>
+        <t>
+      <xref target="RFC6359"/> defines the requirements for the IETF Datatracker to include 
+      processing information and track external states after a document leaves 
+      the IESG. This document updates <xref target="RFC6359"/>  by introducing deterministic, 
+      system-enforced state-integrity constraints and automated milestones 
+      within this tracking pipeline. It supplements the existing transitions 
+      with algorithmic validation boundaries, enforcing programmatic constraints 
+      during the transition into and execution of the final publication 
+      clearance states.
+        </t>
+      </section>
     </section>
     <section anchor="sect-2">
       <name>Quality Assurance</name>
       <t>This section defines the multi-stage validation criteria and deterministic 
     milestones required to establish a verified quality assurance state prior to 
     the initiation of the formal publication pipeline.</t>
-      <section anchor="sect-2-1" xml:base="sections/technical-qa-finished-bp.xml">
+      <section anchor="sect-2-1">
         <name>Technical QA finished boilerplate</name>
         <t>The global Technical Quality Assurance (QA) <bcp14>SHALL</bcp14>
       operate as a strict two-stage validation hierarchy tied to 
@@ -64,30 +86,42 @@
         <t>The Working Group Chair <bcp14>MUST NOT</bcp14> submit a document
       to the IESG for review until the technical quality assurance boilerplate
       has been formally granted and recorded within the Datatracker.</t>
-        <t><strong>Stage 1 - Working Group Consensus:</strong> The non-conflicted
-      Co-Chair <bcp14>MUST</bcp14> verify and confirm the Working Group 
-      Consensus. Upon verification, the system <bcp14>SHALL</bcp14>
-      programmatically freeze the document. Following this technical lock, the 
-      document is released for formal submission to the IESG, pending manual
-      acknowledgment to transition the system to the <strong>IESG ACK</strong> state.</t>
-        <t><strong>Stage 2 - IESG process validation:</strong> This stage consists
-      of a mandatory manual audit by the IESG to verify exclusively that the Rough
-      Consensus regarding both the initial document adoption (if applicable) and
-      the conclusion of the QA process was correctly determined by the Working
-      Group leadership. Upon successful collective validation within the 
-      <strong>IESG REV</strong> state, the system <bcp14>SHALL</bcp14> automatically
-      insert the following consensus boilerplate as the last paragraph of the 
-      "Status of This Memo" section:</t>
+        <dl newline="true">
+          <dt><strong>Stage 1 - Working Group Consensus</strong></dt>
+          <dd> 
+       The non-conflicted Co-Chair <bcp14>MUST</bcp14> verify and confirm 
+       the consensus, triggering an immediate programmatic technical lock 
+       on the document.
+    </dd>
+          <dt><strong>Stage 2 - IESG process validation</strong></dt>
+          <dd>
+      The responsible Area Director <bcp14>MUST</bcp14> manually audit 
+      and validate the Working Group Chair's consensus determination within 
+      the <strong>IESG REV</strong> state.
+    </dd>
+        </dl>
+        <t>In cases of total recusal the regulations of <xref target="sect-2-2"/>
+          <bcp14>MUST</bcp14> be applied.</t>
+        <t>
+    After Both Stages have successfully been completed the following 
+    <strong>boilerplate</strong> <bcp14>SHALL</bcp14> be added at the 
+    end of the "Status Of this Memo" section:
+        </t>
         <blockquote>
-          <t>"The responsible Working Group has reached rough consensus that the technical quality 
-         assurance was completed. The Internet Engineering Steering Group (IESG) successfully 
-         validated the process." </t>
+          <t>
+      "The responsible Working Group has reached rough consensus that the technical 
+      quality assurance was completed. The Internet Engineering Steering Group (IESG) 
+      successfully validated the process." 
+          </t>
         </blockquote>
-        <t>Upon entering the <strong>IESG OK - Document ready for publication</strong> state,
-  the global QA process is complete, and the document <bcp14>SHALL</bcp14>
-  be transferred to the RPC for final editorial processing.</t>
+        <t>
+   Upon entering the <strong>IESG OK - Document ready for publication</strong> state,
+   the global QA process is complete, and the document <bcp14>SHALL</bcp14>
+   be transferred to the RFC Production Center for final editorial processing
+   and publication.
+        </t>
       </section>
-      <section anchor="sect-2-2" xml:base="sections/coi.xml">
+      <section anchor="sect-2-2">
         <name>Conflict of Interest</name>
         <t>The Datatracker <bcp14>MUST</bcp14> synchronize all state changes of the 
      technical quality assurance boilerplate directly with the responsible
@@ -112,7 +146,7 @@
      transition through the standard consensus mechanics if the recorded state 
      does not reflect the actual technical consensus of the room.</t>
       </section>
-      <section anchor="sect-2-3" xml:base="sections/last-call-control.xml">
+      <section anchor="sect-2-3">
         <name>Last Call Control</name>
         <t>A Chair or Area Director <bcp14>SHALL NOT</bcp14> be permitted to:</t>
         <ul>
@@ -131,7 +165,7 @@
     </section>
     <section anchor="sect-3">
       <name>The Two-Pillar Model</name>
-      <section anchor="sect-3-1" xml:base="sections/timer.xml">
+      <section anchor="sect-3-1">
         <name>The Timer</name>
         <t>The publication pipeline validation enforces the following timer constraint:</t>
         <ul>
@@ -144,13 +178,13 @@
         </ul>
         <t>With explicit authorization of the IESG, the timer can be extended by maximum of ten business days overall.</t>
       </section>
-      <section anchor="sect-3-2" xml:base="sections/normative-spliting.xml">
+      <section anchor="sect-3-2">
         <name>Normative Splitting</name>
         <t>After the 30-day timer expires, the RPC <bcp14>SHALL</bcp14> automatically split the cluster. 
   Documents without normative references on the blocker <bcp14>SHALL</bcp14> be released and 
   published immediately.</t>
       </section>
-      <section anchor="sect-3-3" xml:base="sections/integrity-and-reset.xml">
+      <section anchor="sect-3-3">
         <name>Process Integrity and Automatic Reset</name>
         <t>Quality assurance <bcp14>MUST</bcp14> be done before Working Group Last Call and 
   <bcp14>MUST NOT</bcp14> be executed in the AUTH48 or equivalent state. 
@@ -178,17 +212,20 @@
      review mechanisms from the judicial escalation channels, 
      establishing an unalterable, verifiable ledger of all
      procedural milestones.</t>
-      <section anchor="sect-4-1" xml:base="sections/changes-to-dt-iesg-level.xml">
+      <section anchor="sect-4-1">
         <name>IESG Level</name>
         <t>The IESG <bcp14>MAY</bcp14> decide to initiate a parallel dual-review on 
       complex topics consisting of two isolated entities, where at 
       least one entity <bcp14>MUST</bcp14> be external. This decision 
-      <bcp14>MUST</bcp14> be formally documented. If all Area Directors
-      assigned to the document are conflicted or unavailable, the model as
-      described above is <bcp14>MUST</bcp14> be applied.</t>
+      <bcp14>MUST</bcp14> be formally documented. If all Area Directors 
+      assigned to the document are conflicted or unavailable, the formal  
+      escalation model specified in <xref target="sect-3-3"/> <bcp14>MUST</bcp14> 
+      be applied. In this scenario, the approval authority <bcp14>SHALL</bcp14> be escalated 
+      to the Internet Architecture Board (IAB) to appoint a neutral, independent 
+      reviewer, ensuring that the parallel dual-review metrics remain uncompromised.</t>
         <t>Following Datatracker states <bcp14>MUST</bcp14> be instated or renamed:</t>
         <dl newline="true">
-          <dt><strong>IESG QUE - Qeued for acknowledgement</strong></dt>
+          <dt><strong>IESG QUE - Queued for acknowledgement</strong></dt>
           <dd>
            Set automatically by the system upon Working Group Chair 
            submission, pending manual acknowledgment.
@@ -231,24 +268,28 @@
               object to the RFC Editor Queue. Upon execution, only the RPC 
         <bcp14>SHALL</bcp14> be allowed to make changes to the document.
          </dd>
-          <dt><strong>IESG OK - Process clearance granted</strong></dt>
+          <dt><strong>IESG OK - Process variance clearance granted</strong></dt>
           <dd>   
           This state <bcp14>SHALL</bcp14> activate the
           executive authorization for the requested procedural variance,
             concluding the IESG-level exceptional review.
           </dd>
-          <dt><strong>IESG EPR - Exceptional Process requested by WG</strong></dt>
+          <dt><strong>IESG PVR - Process variance requested by WG</strong></dt>
           <dd>This state <bcp14>SHALL</bcp14> record the transparent import
             of a working group's formal petition  for an out-of-band mechanism 
             outside the scope of <xref target="I-D.ietf-procon-2026bis"/>.
-       </dd>
+        </dd>
+          <dt><strong>IESG PVR - Process variance sent to IAB for validation</strong></dt>
+          <dd>This state <bcp14>SHALL</bcp14> record that the IESG was not able to
+          validate the variance on their own and requested the IAB to validate it.
+      </dd>
         </dl>
         <t>On complex topics, the IESG <bcp14>MAY</bcp14> consider consulting the IAB for process validation.
    The IESG <bcp14>SHALL NOT</bcp14> be authorized to disclose the name of the reviewing
    entity even to the authors.</t>
         <t>The process validation <bcp14>MUST</bcp14> be done by the IESG.</t>
       </section>
-      <section anchor="sect-4-2" xml:base="sections/changes-to-dt-iab-level.xml">
+      <section anchor="sect-4-2">
         <name>IAB Level</name>
         <t>The architectural and procedural clearance stream under the jurisdiction 
    of the Internet Architecture Board (IAB) <bcp14>SHALL</bcp14> enforce a deterministic, 
@@ -291,17 +332,17 @@
           This state <bcp14>SHALL</bcp14> activate the executive transfer of the cleared
           technical or architectural payload back to the operational stream for final printing.
         </dd>
-          <dt><strong>Exceptional process validated, clearance can be granted:</strong></dt>
+          <dt><strong>IAB OK - Process variance validated, clearance can be granted</strong></dt>
           <dd>This state <bcp14>SHALL</bcp14> ratify the highest-level structural approval for
-                  a disputed out-of-band mechanism, formally notifying the IESG that executive 
-                  clearance may be executed.
-          </dd>
+                a disputed out-of-band mechanism, formally notifying the IESG that executive 
+                clearance may be executed.
+        </dd>
         </dl>
       </section>
     </section>
     <section anchor="sect-5">
       <name>Process-related permissions and duties of IESG, IAB and RPC</name>
-      <section anchor="sect-5-1" xml:base="sections/perm-and-duties-iesg.xml">
+      <section anchor="sect-5-1">
         <name>Permissions and duties of the IESG</name>
         <t>
       The Internet Engineering Steering Group (IESG) acts strictly as a procedural 
@@ -318,7 +359,7 @@
       compliance with the absolute non-interference directives defined in <xref target="sect-4-1"/>.
         </t>
       </section>
-      <section anchor="sect-5-2" xml:base="sections/perm-and-duties-iab.xml">
+      <section anchor="sect-5-2">
         <name>Permissions and duties of the IAB</name>
         <t>
       The Internet Architecture Board (IAB) serves as the structural governance 
@@ -336,7 +377,7 @@
       complete and unalterable audit trail.
         </t>
       </section>
-      <section anchor="sect-5-3" xml:base="sections/perm-and-duties-rpc.xml">
+      <section anchor="sect-5-3">
         <name>Permissions and duties of the RPC</name>
         <t>
       The RFC Production Center (RPC) acts as the sole primary enforcer and transactional 
@@ -377,7 +418,7 @@
       </section>
     </section>
     <!-- Section 6: IESG Requested Actions -->
-<section anchor="sect-6" xml:base="sections/iesg-actions.xml">
+<section anchor="sect-6">
       <name>Stream Maintaining Bodies Considerations</name>
       <t>To safeguard process and document quality, the</t>
       <ul>
@@ -395,7 +436,7 @@
         </li>
         <li>
           <t>all other stream maintaining bodies fulfilling the 
-    criteria as defined in <xref target="RFC7841" section="2"/></t>
+    criteria as defined in <xref target="RFC7841" section="2"/> and its successors</t>
         </li>
       </ul>
       <t>are requested to issue two Joint Statements:</t>
@@ -449,7 +490,7 @@ no further security considerations need to be made.</t>
       <name>References</name>
       <references anchor="normative-refs">
         <name>Normative References</name>
-        <referencegroup anchor="BCP14" target="https://www.rfc-editor.org/info/bcp14" xml:base="https://bib.ietf.org/public/rfc/bibxml9/reference.BCP.0014.xml">
+        <referencegroup anchor="BCP14" target="https://www.rfc-editor.org/info/bcp14">
           <reference anchor="RFC2119" target="https://www.rfc-editor.org/info/rfc2119">
             <front>
               <title>Key words for use in RFCs to Indicate Requirement Levels</title>
@@ -477,7 +518,21 @@ no further security considerations need to be made.</t>
             <seriesInfo name="DOI" value="10.17487/RFC8174"/>
           </reference>
         </referencegroup>
-        <reference anchor="RFC7841" target="https://www.rfc-editor.org/info/rfc7841" xml:base="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7841.xml">
+        <reference anchor="RFC6359" target="https://www.rfc-editor.org/info/rfc6359">
+          <front>
+            <title>Datatracker Extensions to Include IANA and RFC Editor Processing Information</title>
+            <author fullname="S. Ginoza" initials="S." surname="Ginoza"/>
+            <author fullname="M. Cotton" initials="M." surname="Cotton"/>
+            <author fullname="A. Morris" initials="A." surname="Morris"/>
+            <date month="September" year="2011"/>
+            <abstract>
+              <t>This document captures the requirements for integrating IANA and RFC Editor state information into the Datatracker to provide the community with a unified tool to track the status of their document as it progresses from Internet-Draft (I-D) version -00 to RFC. Extending the Datatracker to hold document data from I-D version -00 to RFC allows for increased automation between the Datatracker, IANA, and RFC Editor, thus reducing manual labor, processing errors, and potential delay. Therefore, this document also describes the requirements to make such automation possible. This document is not an Internet Standards Track specification; it is published for informational purposes.</t>
+            </abstract>
+          </front>
+          <seriesInfo name="RFC" value="6359"/>
+          <seriesInfo name="DOI" value="10.17487/RFC6359"/>
+        </reference>
+        <reference anchor="RFC7841" target="https://www.rfc-editor.org/info/rfc7841">
           <front>
             <title>RFC Streams, Headers, and Boilerplates</title>
             <author fullname="J. Halpern" initials="J." role="editor" surname="Halpern"/>
@@ -491,34 +546,7 @@ no further security considerations need to be made.</t>
           <seriesInfo name="RFC" value="7841"/>
           <seriesInfo name="DOI" value="10.17487/RFC7841"/>
         </reference>
-      </references>
-      <references anchor="informative-refs">
-        <name>Informative References</name>
-        <reference anchor="RFC8788" target="https://www.rfc-editor.org/info/rfc8788" xml:base="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.8788.xml">
-          <front>
-            <title>Eligibility for the 2020-2021 Nominating Committee</title>
-            <author fullname="B. Leiba" initials="B." surname="Leiba"/>
-            <date month="May" year="2020"/>
-            <abstract>
-              <t>The 2020-2021 Nominating Committee (NomCom) is to be formed between the IETF 107 and IETF 108 meetings, and the issue of eligibility of who can serve on that NomCom needs clarification. This document provides a one-time interpretation of the eligibility rules that is required for the exceptional situation of the cancellation of the in-person IETF 107 meeting. This document only affects the seating of the 2020-2021 NomCom and any rules or processes that relate to NomCom eligibility before IETF 108; it does not set a precedent to be applied in the future.</t>
-            </abstract>
-          </front>
-          <seriesInfo name="RFC" value="8788"/>
-          <seriesInfo name="DOI" value="10.17487/RFC8788"/>
-        </reference>
-        <reference anchor="RFC7991" target="https://www.rfc-editor.org/info/rfc7991" xml:base="https://bib.ietf.org/public/rfc/bibxml/reference.RFC.7991.xml">
-          <front>
-            <title>The "xml2rfc" Version 3 Vocabulary</title>
-            <author fullname="P. Hoffman" initials="P." surname="Hoffman"/>
-            <date month="December" year="2016"/>
-            <abstract>
-              <t>This document defines the "xml2rfc" version 3 vocabulary: an XML-based language used for writing RFCs and Internet-Drafts. It is heavily derived from the version 2 vocabulary that is also under discussion. This document obsoletes the v2 grammar described in RFC 7749.</t>
-            </abstract>
-          </front>
-          <seriesInfo name="RFC" value="7991"/>
-          <seriesInfo name="DOI" value="10.17487/RFC7991"/>
-        </reference>
-        <reference anchor="I-D.ietf-procon-2026bis" target="https://datatracker.ietf.org/doc/html/draft-ietf-procon-2026bis-11" xml:base="https://bib.ietf.org/public/rfc/bibxml3/reference.I-D.ietf-procon-2026bis.xml">
+        <reference anchor="I-D.ietf-procon-2026bis" target="https://datatracker.ietf.org/doc/html/draft-ietf-procon-2026bis-11">
           <front>
             <title>The Internet Standards Process</title>
             <author fullname="Rich Salz" initials="R." surname="Salz">
@@ -535,8 +563,35 @@ no further security considerations need to be made.</t>
           <seriesInfo name="Internet-Draft" value="draft-ietf-procon-2026bis-11"/>
         </reference>
       </references>
+      <references anchor="informative-refs">
+        <name>Informative References</name>
+        <reference anchor="RFC7991" target="https://www.rfc-editor.org/info/rfc7991">
+          <front>
+            <title>The "xml2rfc" Version 3 Vocabulary</title>
+            <author fullname="P. Hoffman" initials="P." surname="Hoffman"/>
+            <date month="December" year="2016"/>
+            <abstract>
+              <t>This document defines the "xml2rfc" version 3 vocabulary: an XML-based language used for writing RFCs and Internet-Drafts. It is heavily derived from the version 2 vocabulary that is also under discussion. This document obsoletes the v2 grammar described in RFC 7749.</t>
+            </abstract>
+          </front>
+          <seriesInfo name="RFC" value="7991"/>
+          <seriesInfo name="DOI" value="10.17487/RFC7991"/>
+        </reference>
+        <reference anchor="RFC8788" target="https://www.rfc-editor.org/info/rfc8788">
+          <front>
+            <title>Eligibility for the 2020-2021 Nominating Committee</title>
+            <author fullname="B. Leiba" initials="B." surname="Leiba"/>
+            <date month="May" year="2020"/>
+            <abstract>
+              <t>The 2020-2021 Nominating Committee (NomCom) is to be formed between the IETF 107 and IETF 108 meetings, and the issue of eligibility of who can serve on that NomCom needs clarification. This document provides a one-time interpretation of the eligibility rules that is required for the exceptional situation of the cancellation of the in-person IETF 107 meeting. This document only affects the seating of the 2020-2021 NomCom and any rules or processes that relate to NomCom eligibility before IETF 108; it does not set a precedent to be applied in the future.</t>
+            </abstract>
+          </front>
+          <seriesInfo name="RFC" value="8788"/>
+          <seriesInfo name="DOI" value="10.17487/RFC8788"/>
+        </reference>
+      </references>
     </references>
-    <section anchor="apdx-a">
+    <section anchor="acknowledgements">
       <name>Acknowledgements</name>
       <t>The author respectfully thanks:</t>
       <ul>
@@ -544,10 +599,113 @@ no further security considerations need to be made.</t>
         <li>Rich Salz, for compatibility review with RFC 2026 successor</li>
       </ul>
     </section>
-    <section anchor="apdx-b" xml:base="sections/changelog.xml">
-      <!-- [RPC NOTE] The RPC is requested to removed this Appendix entire
-     section prior RFC/BCP publication -->
-    <name>Changes</name>
+    <section anchor="imp-notes">
+      <name>Implementation Notes (informative)</name>
+      <ol>
+    <li>
+          <t>Tools-Team</t>
+          <ol>
+        <li>
+              <t><strong>Quality Assurance Boilerplate for Section 2.1</strong></t>
+              <t>The Datatracker user interface <bcp14>SHALL</bcp14> programmatically disable and lock the 
+          "Submit to IESG for review" action vector for any document context that lacks 
+          a recorded, verified technical QA finished boilerplate. Setting this boilerplate 
+          <bcp14>SHALL</bcp14> immediately trigger a complete locking of all technical and normative 
+      sections in the backend.</t>
+            </li>
+            <li>
+              <t><strong>Conflict of Interest Handling for Section 2.2</strong></t>
+              <t>The Datatracker backend <bcp14>MUST</bcp14> programmatically detect and isolate 
+      procedural conflicts using the following behavioral constraints:</t>
+              <ol type="a">
+            <li>
+                  <t><strong>Automated Self-Approval Prevention</strong></t>
+                  <t>The system <bcp14>MUST</bcp14> programmatically cross-reference active session
+          credentials with the document's metadata author list. If a matching 
+          entity is detected, the approval action to grant the QA boilerplate 
+          <bcp14>MUST</bcp14> be disabled for that specific account.</t>
+                </li>
+                <li>
+                  <t><strong>Dual-Key Conflict Escalation</strong></t>
+                  <t>Once a conflict is flagged, the system <bcp14>MUST</bcp14> hold all state transitions
+          pending formal approval from both a non-conflicted Co-Chair and a 
+          non-conflicted Co-AD. This joint approval <bcp14>MUST</bcp14> be recorded within a 
+          strict 72-hour window.</t>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <t><strong>Last Call Control and State Interlocking for Section 2.3</strong></t>
+              <t>The Datatracker validation engine <bcp14>MUST</bcp14> programmatically restrict the 
+             initiation of Last Calls within a Working Group scope using the 
+         following interlocking logic:</t>
+              <ol type="a">
+        <li>
+                  <t><strong>Parallel Last Call Prevention</strong></t>
+                  <t>The system <bcp14>MUST</bcp14> reject any submission to launch a Working Group 
+           Last Call (WG LC) if another document within the same Working Group 
+          is actively flagged with an ongoing Last Call.</t>
+                </li>
+                <li>
+                  <t><strong>Administrative Interlock</strong></t>
+                  <t>The system <bcp14>MUST</bcp14> programmatically disable and block the creation 
+          of any new Last Calls for all drafts under that Working Group’s ju
+          risdiction as long as at least one document in that specific Working 
+          Group remains in the "IAB OK - Process Variance validated, forwared 
+          to IESG for clearance" state.</t>
+                </li>
+                <li>
+                  <t><strong>Automated Interlock Release</strong></t>
+                  <t>The system <bcp14>MUST</bcp14> automatically release the blockade specified in 1.3b 
+          immediately upon the blocked document transitioning out of the deficiency 
+          state via a recorded delta-revision.</t>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <t><strong>Permission and UI Architecture</strong></t>
+              <t>The Datatracker user interface and access control layers <bcp14>MUST</bcp14> dynamically 
+          enforce the following structural boundaries based on the active state 
+          defined in Sections <xref target="sect-4-1" format="counter"/> and 
+      <xref target="sect-4-2" format="counter"/>:</t>
+              <ol type="a">
+        <li>
+                  <t><strong>Metadata and Identity Masking</strong></t>
+                  <t>During states designated for neutral evaluation (e.g., IESG REV in Section 4.1), 
+          the UI <bcp14>MUST</bcp14> programmatically mask the identity and associated email headers of
+          the reviewer, removing the name field entirely from all public logs and 
+          transaction views.</t>
+                </li>
+                <li>
+                  <t><strong>Access Rights Reinstatement</strong></t>
+                  <t>Input and approval rights <bcp14>MUST</bcp14> be immediately reinstated to the responsible 
+          Working Group Chair once the judicial stream transitions to either
+          "IAB OK - Process Variance validated, forwarded to IESG for clearance" or 
+          "IAB CON - Consultation request received from IESG" as defined in 
+          <xref target="sect-4-2"/>.</t>
+                </li>
+                <li>
+                  <t><strong>Automated Document Unfreeze</strong></t>
+                  <t>If an IAB evaluation concludes with a return to the working group under Section 4.2, 
+          the Datatracker <bcp14>MUST</bcp14> immediately unfreeze the document upon the state transitioning to 
+              "IAB CON - Consultation request received from IESG" to allow the necessary technical revisions.</t>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <t><strong>The RFC Production Center</strong></t>
+          <t>To support this workflow, the RFC-Editor Queue management system 
+      <bcp14>SHALL</bcp14> implement a binary state flag designated as "Technical Work 
+      Finalized: [Yes/No]". Toggling this flag to "Yes" is irrevocable 
+      and serves as a deterministic system event that automatically 
+      activates the 30-day timer.</t>
+        </li>
+      </ol>
+    </section>
+    <section anchor="apdx-b" removeInRFC="true">
+      <name>Changes</name>
       <ul spacing="compact">
         <li>
           <t>Changes since draft-gerke-auth48-process-reform-00</t>
@@ -572,8 +730,12 @@ no further security considerations need to be made.</t>
             <li>
               <t>Updated two-stage system (<xref target="sect-2-1"/>)</t>
               <ol spacing="compact">
-              <li>WG Stage</li>
-                <li>IESG reviews and sets boilerplate</li>
+          <li>
+                  <t>WG Stage</t>
+                </li>
+                <li>
+                  <t>IESG reviews and sets boilerplate</t>
+                </li>
               </ol>
             </li>
             <li>
@@ -676,6 +838,56 @@ no further security considerations need to be made.</t>
               <t>Changed unordered lists in section 4.1 and 4.2 to definition lists</t>
             </li>
           </ul>
+        </li>
+        <li>
+          <t>Changes since draft-gerke-publication-process.reform-06</t>
+          <ul>
+            <li>
+              <t>Fixed Crossreferencing</t>
+            </li>
+            <li>
+              <t>Fixed Possible missunderstandings in Sections 2 and 4</t>
+            </li>
+            <li>
+              <t>Fiexd logical issues in Section 2</t>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <t>Changes since draft-gerke-publication-process-reform-07</t>
+          <ul>
+            <li>
+              <t>Updated Abstract</t>
+            </li>
+            <li>
+              <t>Added RFC 6359 to updates atrribute</t>
+            </li>
+            <li>
+              <t>Added section 1.2 "Relationship to RFC 6359"</t>
+            </li>
+            <li>
+              <t>Added Appendix B "Implementation Notes (informative)</t>
+            </li>
+            <li>
+              <t>Added Appendix D "Notes to the RPC"</t>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section anchor="rpc-notes" removeInRFC="true">
+      <name>Notes to the RPC</name>
+      <t>The RPC is requested to:</t>
+      <ul>
+        <li>
+          <t>remove Appendices C "Changes" and D "Notes to RPC" prior to publication.</t>
+        </li>
+        <li>
+          <t>sync the publication with RFC2026bis.</t>
+        </li>
+        <li>
+          <t>replace the normative reference to RFC2026bis
+        with its assigned RFC number.</t>
         </li>
       </ul>
     </section>

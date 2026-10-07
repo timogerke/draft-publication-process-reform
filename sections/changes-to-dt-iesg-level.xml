@@ -18,15 +18,15 @@
          </dd>
        <dt><strong>IESG OK - Queued for review</strong></dt> 
          <dd>Set automatically after acknowledgment, pending 
-	     reviewing entity assignment.
+         reviewing entity assignment.
           </dd>
         <dt><strong>IESG ACK - Acknowledged</strong></dt>
-	  <dd>Indicates that the document was received and has completed formal 
-	      validation (Sanity Check). This state <bcp14>SHALL NOT</bcp14> 
-	      last longer than five business days.
-	    </dd>
-	<dt><strong>IESG REV - Assigned to review entity</strong></dt>
-	  <dd>Indicates that the uncompromised reviewing entity - or, if triggered by the criteria as
+      <dd>Indicates that the document was received and has completed formal 
+          validation (Sanity Check). This state <bcp14>SHALL NOT</bcp14> 
+          last longer than five business days.
+        </dd>
+    <dt><strong>IESG REV - Assigned to review entity</strong></dt>
+      <dd>Indicates that the uncompromised reviewing entity - or, if triggered by the criteria as
                defined in <xref target="sect-2-2" />, the parallel internal and external reviewer 
                entities - has taken formal charge of the ledger, initiating the
                confidential evaluation period.
@@ -36,30 +36,30 @@
              Confirms that the collective body has cleared the entity without technical
              caveats and that all active parallel review metrics show no 
              unresolved structural variance.
-	   </dd>
-	 <dt><strong>IESG REV - Review done, WG action required</strong></dt> 
-	   <dd>This state <bcp14>SHALL</bcp14> log a structured list of formal 
-	      deficiencies within the Datatracker, which <bcp14>SHALL</bcp14> 
-	      automatically return the docket to the community for resolution.
-	   </dd>
-	<dt><strong>IESG REV - WG action verified, no objections</strong></dt>
-	   <dd>
-	    This state <bcp14>SHALL</bcp14> document the final and successful 
-	    collective validation of the working group's delta-revisions against the 
-	    logged deficiencies.
+       </dd>
+     <dt><strong>IESG REV - Review done, WG action required</strong></dt> 
+       <dd>This state <bcp14>SHALL</bcp14> log a structured list of formal 
+          deficiencies within the Datatracker, which <bcp14>SHALL</bcp14> 
+          automatically return the docket to the community for resolution.
+       </dd>
+    <dt><strong>IESG REV - WG action verified, no objections</strong></dt>
+       <dd>
+        This state <bcp14>SHALL</bcp14> document the final and successful 
+        collective validation of the working group's delta-revisions against the 
+        logged deficiencies.
           </dd>
       <dt><strong>IESG OK - Document ready for publication</strong></dt>
          <dd>The activation of this state <bcp14>SHALL</bcp14> programmatically 
-      	    execute the immediate and irreversible handover of the document 
-      	    object to the RFC Editor Queue. Upon execution, only the RPC 
-	    <bcp14>SHALL</bcp14> be allowed to make changes to the document.
+              execute the immediate and irreversible handover of the document 
+              object to the RFC Editor Queue. Upon execution, only the RPC 
+        <bcp14>SHALL</bcp14> be allowed to make changes to the document.
          </dd>
      <dt><strong>IESG OK - Process variance clearance granted</strong></dt>
         <dd>   
           This state <bcp14>SHALL</bcp14> activate the
           executive authorization for the requested procedural variance,
-      	  concluding the IESG-level exceptional review.
-      	</dd>
+            concluding the IESG-level exceptional review.
+          </dd>
      <dt><strong>IESG PVR - Process variance requested by WG</strong></dt>
         <dd>This state <bcp14>SHALL</bcp14> record the transparent import
             of a working group's formal petition  for an out-of-band mechanism 
