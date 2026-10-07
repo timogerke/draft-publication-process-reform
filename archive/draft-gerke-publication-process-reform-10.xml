@@ -649,7 +649,7 @@ no further security considerations need to be made.</t>
                 <li>
                   <t><strong>Administrative Interlock</strong></t>
                   <t>The system <bcp14>MUST</bcp14> programmatically disable and block the creation 
-          of any new Last Calls for all drafts under that Working Group’s ju
+          of any new Last Calls for all drafts under that Working Group's ju
           risdiction as long as at least one document in that specific Working 
           Group remains in the "IAB OK - Process Variance validated, forwared 
           to IESG for clearance" state.</t>
