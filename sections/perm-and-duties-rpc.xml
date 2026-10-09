@@ -1,12 +1,12 @@
 <section anchor="sect-5-3">
   <name>Permissions and duties of the RPC</name>
-  <t>
+    <t>
       The RFC Production Center (RPC) acts as the sole primary enforcer and transactional 
-      execution authority of the publishing pipeline across all five processing streams 
-      (IETF, IRTF, IAB, Independent, and Editorial) once a document enters the state 
-      <strong>IESG OK - Document ready for publication</strong> or its stream-specific 
-      equivalent. The RPC's duty is strictly confined to editorial refinement and 
-      <bcp14>SHALL NOT</bcp14> alter the technical meaning of the text. 
+      execution authority of the publishing pipeline across all five processing streams (IETF, 
+      IRTF, IAB, Independent, and Editorial) once a document successfully transitions out of 
+      State 5 (IETF Consensus) into the final publication pipeline as defined in <xref target="sect-4" />. 
+      The RPC's duty is strictly confined to editorial refinement and <bcp14>SHALL NOT</bcp14> alter the technical 
+      meaning of the text.
     </t>
     <t>
       To eliminate manual handling vulnerabilities and out-of-band interference during 

@@ -10,34 +10,34 @@
           "Submit to IESG for review" action vector for any document context that lacks 
           a recorded, verified technical QA finished boilerplate. Setting this boilerplate 
           <bcp14>SHALL</bcp14> immediately trigger a complete locking of all technical and normative 
-      sections in the backend.</t>
+          sections in the backend.</t>
     </li>
     <li>
       <t><strong>Conflict of Interest Handling for Section 2.2</strong></t>
       <t>The Datatracker backend <bcp14>MUST</bcp14> programmatically detect and isolate 
       procedural conflicts using the following behavioral constraints:</t>
-          <ol type="a">
-            <li>
+      <ol type="a">
+        <li>
           <t><strong>Automated Self-Approval Prevention</strong></t>
           <t>The system <bcp14>MUST</bcp14> programmatically cross-reference active session
           credentials with the document's metadata author list. If a matching 
           entity is detected, the approval action to grant the QA boilerplate 
-          <bcp14>MUST</bcp14> be disabled for that specific account.</t>
-            </li>
-        <li>
-          <t><strong>Dual-Key Conflict Escalation</strong></t>
-          <t>Once a conflict is flagged, the system <bcp14>MUST</bcp14> hold all state transitions
-          pending formal approval from both a non-conflicted Co-Chair and a 
-          non-conflicted Co-AD. This joint approval <bcp14>MUST</bcp14> be recorded within a 
-          strict 72-hour window.</t>
-               </li>
-            </ol>
-        </li>
-        <li>
-      <t><strong>Last Call Control and State Interlocking for Section 2.3</strong></t>
-      <t>The Datatracker validation engine <bcp14>MUST</bcp14> programmatically restrict the 
-             initiation of Last Calls within a Working Group scope using the 
-         following interlocking logic:</t>
+         <bcp14>MUST</bcp14> be disabled for that specific account.</t>
+       </li>
+       <li>
+         <t><strong>Dual-Key Conflict Escalation</strong></t>
+         <t>Once a conflict is flagged, the system <bcp14>MUST</bcp14> hold all state transitions
+         pending formal approval from both a non-conflicted Co-Chair and a 
+         non-conflicted Co-AD. This joint approval <bcp14>MUST</bcp14> be recorded within a 
+         strict 72-hour window.</t>
+       </li>
+      </ol>
+      </li>
+      <li>
+        <t><strong>Last Call Control and State Interlocking for Section 2.3</strong></t>
+        <t>The Datatracker validation engine <bcp14>MUST</bcp14> programmatically restrict the 
+           initiation of Last Calls within a Working Group scope using the 
+           following interlocking logic:</t>
       <ol type="a">
         <li>
           <t><strong>Parallel Last Call Prevention</strong></t>
@@ -47,17 +47,16 @@
             </li>
         <li>
           <t><strong>Administrative Interlock</strong></t>
-          <t>The system <bcp14>MUST</bcp14> programmatically disable and block the creation 
-          of any new Last Calls for all drafts under that Working Group's ju
-          risdiction as long as at least one document in that specific Working 
-          Group remains in the "IAB OK - Process Variance validated, forwared 
-          to IESG for clearance" state.</t>
+	  <t>The system <bcp14>MUST</bcp14> programmatically disable and block the creation of any new Last Calls 
+     for all drafts under that Working Group's jurisdiction as long as at least one document in 
+     that specific Working Group remains in an active escalation validation state following a 
+     recorded process deficiency.</t>
         </li>
         <li>
           <t><strong>Automated Interlock Release</strong></t>
-          <t>The system <bcp14>MUST</bcp14> automatically release the blockade specified in 1.3b 
-          immediately upon the blocked document transitioning out of the deficiency 
-          state via a recorded delta-revision.</t>
+	  <t>The system <bcp14>MUST</bcp14> automatically release the blockade specified in Section B.1.3(b) 
+     immediately upon the blocked document transitioning out of the deficiency state via a 
+     recorded delta-revision reflecting verified community alignment.</t>
             </li>
           </ol>
         </li>
@@ -65,29 +64,26 @@
       <t><strong>Permission and UI Architecture</strong></t>
       <t>The Datatracker user interface and access control layers <bcp14>MUST</bcp14> dynamically 
           enforce the following structural boundaries based on the active state 
-          defined in Sections <xref target="sect-4-1" format="counter"/> and 
-      <xref target="sect-4-2" format="counter" />:</t>
-          <ol type="a">
+          defined in <xref target="sect-4" />:</t>
+      <ol type="a">
         <li>
           <t><strong>Metadata and Identity Masking</strong></t>
-          <t>During states designated for neutral evaluation (e.g., IESG REV in Section 4.1), 
-          the UI <bcp14>MUST</bcp14> programmatically mask the identity and associated email headers of
+	  <t>During states designated for neutral evaluation, the UI <bcp14>MUST</bcp14> 
+	  programmatically mask the identity and associated email headers of
           the reviewer, removing the name field entirely from all public logs and 
           transaction views.</t>
         </li>
             <li>
           <t><strong>Access Rights Reinstatement</strong></t> 
-          <t>Input and approval rights <bcp14>MUST</bcp14> be immediately reinstated to the responsible 
-          Working Group Chair once the judicial stream transitions to either
-          "IAB OK - Process Variance validated, forwarded to IESG for clearance" or 
-          "IAB CON - Consultation request received from IESG" as defined in 
-          <xref target="sect-4-2" />.</t>
+	  <t>Input and approval rights <bcp14>MUST</bcp14> be immediately reinstated to the responsible Working 
+     Group Chair once the regular process transitions to either a validated process variance 
+     path or an official consultation states as defined in <xref target="sect-4" />.</t>
         </li>
         <li>
           <t><strong>Automated Document Unfreeze</strong></t>
-          <t>If an IAB evaluation concludes with a return to the working group under Section 4.2, 
-          the Datatracker <bcp14>MUST</bcp14> immediately unfreeze the document upon the state transitioning to 
-              "IAB CON - Consultation request received from IESG" to allow the necessary technical revisions.</t>
+	  <t>If an evaluation concludes with a return to the working group level, the Datatracker <bcp14>MUST</bcp14>
+	     immediately unfreeze the document object model upon transitioning into the consultation state to permit 
+	     all necessary technical revisions.</t>
             </li>
           </ol>
         </li> 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rfc xmlns:xi="http://www.w3.org/2001/XInclude" 
      category="bcp" 
-     docName="draft-gerke-publication-process-reform-10" 
+     docName="draft-gerke-publication-process-reform-11" 
      ipr="trust200902" 
      updates="6359, 7841"
      xml:lang="en" 
@@ -13,7 +13,7 @@
 <front>
   <title abbrev="Publication Process Reform">Publication Process Reform to prevent misuse of AUTH48 or equivalent states</title>
   
-  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-10"/>
+  <seriesInfo name="Internet-Draft" value="draft-gerke-publication-process-reform-11"/>
     
   <author fullname="Timo Gerke" initials="T." surname="Gerke" role="editor">
     <organization>Independent</organization>
@@ -26,7 +26,7 @@
     </address>
   </author>
 
-  <date year="2026" month="October" day="07" />
+  <date year="2026" month="October" day="09" />
   <workgroup>Individual Submission</workgroup>
   
   <abstract>
@@ -56,18 +56,11 @@
   <xi:include href="sections/normative-spliting.xml" />
   <xi:include href="sections/integrity-and-reset.xml" />
 </section>
-  <section anchor="sect-4">
-  <name>Changes to Datatracker</name>
-     <t>To ensure absolute transparency, prevent unmanaged out-of-band
-     disclosures, and safeguard the consensus-finding process, the
-     IETF Datatracker <bcp14>MUST</bcp14> structurally enforce deterministic system
-     states. These granular states strictly isolate the operational
-     review mechanisms from the judicial escalation channels, 
-     establishing an unalterable, verifiable ledger of all
-     procedural milestones.</t>
-
-    <xi:include href="sections/changes-to-dt-iesg-level.xml" />
-    <xi:include href="sections/changes-to-dt-iab-level.xml" />
+<section anchor="sect-4">
+<name>The 6-State Publication Pipeline</name> 
+    <xi:include href="sections/publication-pipeline.xml" xpointer="xpointer(/section/*)"/> 
+    <!--    <xi:include href="sections/changes-to-dt-iesg-level.xml" /> -->
+    <!-- <xi:include href="sections/changes-to-dt-iab-level.xml" /> -->
 
   </section>
 <section anchor="sect-5">

@@ -1,0 +1,105 @@
+<section anchor="sect-4">
+<!--	<name>The 6-Level Publication Pipeline</name> -->
+<t>
+  To ensure absolute transparency, prevent unmanaged out-of-band disclosures, and 
+  safeguard the consensus-finding process, the IETF Datatracker MUST structurally 
+  enforce deterministic system states. These granular states establish an unalterable, 
+  verifiable ledger of all procedural milestones by consolidating and cleaning up all 
+  traditional evaluation steps into a single, linear process symmetry as detailed in the 
+  following table. Technical content modifications MUST be programmatically 
+  prohibited immediately upon a document transitioning into State 4 and during all 
+  subsequent states.
+</t>
+<table align="center">
+    <name>The 6-Level Process Symmetrie and Requirements</name>
+    <thead>
+      <tr>
+          <th>State</th>
+          <th>Designation</th>
+          <th>Core Function &amp; Static</th>
+          <th>System Requirements &amp; Actions</th>
+          <th>Similar to</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Individual Draft</td>
+          <td>Free submission of technological ideas from the ground (Bottom-Up).</td>
+          <td>None. Open to anyone.</td>
+          <td>ISO Working Draft</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>WG Draft</td>
+          <td>Official adoption by the WG. System-enforced timeouts start.</td>
+          <td>Requires formal WG Adoption Consensus. Automation triggers strict 90-day review limit.</td>
+          <td>ISO Committee Draft</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Final WG Draft</td>
+	  <td>Technological core is <strong>frozen</strong>. No asymmetric late changes allowed.</td>
+          <td>Requires formal Working Group Last Call (WGLC) completion. Last chance for technical changes.</td>
+          <td>ISO Final Committee Draft</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Area Consensus</td>
+          <td>The entire Area must document consensus for IESG submission. No AD individual veto.</td>
+	  <td>Requires documented Area-wide consensus. <strong>Technical content changing is prohibited.</strong> Only editorial fixes.</td>
+          <td>ISO Draft International Standard</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>IETF Consensus</td>
+          <td>Last Call and global validation of interoperability. Static review only.</td>
+          <td>Requires completion of IETF-wide Last Call. Static validation only; any technical error forces drop to Level 1.</td>
+          <td>ISO Final Draft International Standard</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Publication Approval</td>
+          <td>Automated, machine-driven RFC minting. AUTH48 is strict syntax-check only.</td>
+          <td>Automated trigger by RFC Editor. Maximum 14-day timeout. Absolute freeze of both content and layout.</td>
+          <td>ISO International Standard</td>
+        </tr>
+      </tbody>
+    </table>
+    <t>On complex and possibly difficult to consider topics according to <xref target="I-D.ietf-procon-2026bis" /> the IESG MAY consider consultig the IAB. 
+     However, in the event of collevtive recusal the duty of the IESG is to forward the document to the IAB.</t> 
+  <t>If no fitting Working Group exists, the responsible Area Review Team or Directorate is requested to perform Early and Final Reviews.</t>
+  <t>Any kind of Process Variance requires the explicit authorization of the IESG or, if requested by it, of the IAB. A process variance can
+  only be granted upon an exact description of it and its requirements.</t>
+  <section anchor="sect-4-1">
+  <name>State Transitions</name>
+    <ol>
+      <li><t>On State 1 -> 2 transition the Working Group has full control of the document, if the draft author is not the appointed editor.</t></li>
+      <li><t>On State 2 -> 3 transition the 14-day Working Group Last Call <bcp14>SHALL</bcp14> be immidiately initiated.</t></li>
+      <li>
+      	<t><strong>Tarnsition to State 4: Area Consensus</strong></t>
+        <ol>
+          <li><t><strong>Regular Path (with Working Group Consensus)</strong></t>
+            <t>On transition, the responsible Area Director is requested to 
+            perform a pre-Area Last Call Review and to initiate an Area Last Call subsequently.</t></li>
+          <li><t><strong>AD-Sponsored Path:</strong></t>
+       	    <t>Drafts coming from State 1 will be injected here directly, bypassing the Working Group states.</t></li>
+      	</ol>
+      </li>
+      <li>
+        <t><strong>Transition to Stage 5: IETF Consensus</strong></t>
+      	<t>On reachin Area Consensus this document <bcp14>SHALL</bcp14> be immidiately forwarded to the IESG. 
+      	Which is <bcp14>REQUIRED</bcp14> to initiate:</t>
+        <ol>
+       	  <li><t>a immidiate pre IETF Last Call Review, which <bcp14>MUST NOT</bcp14> be done by the Area Director
+      		  who has done the pre Area Last Call Review, a external entity <bcp14>SHALL</bcp14> be prefered.</t></li>
+      	  <li><t>Subsequently to this review a immidiate IETF Last Call <bcp14>MUST</bcp14> take place within five business days.</t></li>
+        </ol>
+      </li>
+      <li><t><strong>Transition to State 6: Publication Approval</strong></t>
+	  <t>Upon reaching IETF consensus, the IESG is <bcp14>REQUIRED</bcp14> to forward the document in consent to the
+	  RFC Production Center immidiately.</t>
+      </li>
+    </ol>
+  </section>
+</section>
