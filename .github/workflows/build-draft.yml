@@ -24,8 +24,8 @@ jobs:
       - name: Update Core environment
         run: |
           sudo apt-get update
-          sudo apt-get -y  upgrade
-          sudo apt-get install xml2rfc
+          sudo apt-get -qy  upgrade
+          sudo apt-get -qy install xml2rfc weasyprint
 
       - name: Checkout Repository
         uses: actions/checkout@v7
