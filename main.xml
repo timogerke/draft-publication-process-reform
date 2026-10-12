@@ -57,7 +57,6 @@
   <xi:include href="sections/integrity-and-reset.xml" />
 </section>
 <section anchor="sect-4">
-<name>The 6-State Publication Pipeline</name> 
     <xi:include href="sections/publication-pipeline.xml" xpointer="xpointer(/section/*)"/> 
     <!--    <xi:include href="sections/changes-to-dt-iesg-level.xml" /> -->
     <!-- <xi:include href="sections/changes-to-dt-iab-level.xml" /> -->
@@ -81,7 +80,7 @@ no further security considerations need to be made.</t>
 </section>
 <section anchor="sect-8">
 <name>IANA Considerations</name>
-<t>There are no requests to IANA.</t>
+<t>Since this is no protocol specification, no assignments are required.</t>
 </section>
 </middle>
 <back>

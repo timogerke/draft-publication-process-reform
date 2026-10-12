@@ -99,5 +99,12 @@
          <li><t>Updated Implementation notes not fit updated Section 4</t></li>
        </ul>
      </li>
-     </ul>
+     <li>
+       <t>Changes from draft-gerke-publication-process-reform-11</t>
+       <ul>
+	 <li><t>Updates to Section 4</t></li>
+	 <li><t>Removed textual redundancy</t></li>
+       </ul>
+     </li>
+   </ul>
   </section>

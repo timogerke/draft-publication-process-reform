@@ -17,9 +17,9 @@
     </dd>
     <dt><strong>Stage 2 - IESG process validation</strong></dt>
     <dd>
-      The responsible Area Director <bcp14>MUST</bcp14> manually audit 
-      and validate the Working Group Chair's consensus determination within 
-      the <strong>IESG REV</strong> state.
+      IESG process validation: The responsible Area Director MUST manually 
+      audit and validate the Working Group Chair's consensus determination 
+      within State 4 (Area Consensus).
     </dd>
   </dl>
   <t>In cases of total recusal the regulations of <xref target="sect-2-2" /> 

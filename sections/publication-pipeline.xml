@@ -1,5 +1,5 @@
 <section anchor="sect-4">
-<!--	<name>The 6-Level Publication Pipeline</name> -->
+<name>The 6-Level Publication Pipeline</name> 
 <t>
   To ensure absolute transparency, prevent unmanaged out-of-band disclosures, and 
   safeguard the consensus-finding process, the IETF Datatracker MUST structurally 
@@ -11,12 +11,12 @@
   subsequent states.
 </t>
 <table align="center">
-    <name>The 6-Level Process Symmetrie and Requirements</name>
+    <name>The 6-State Process Symmetry and Requirements</name>
     <thead>
       <tr>
           <th>State</th>
           <th>Designation</th>
-          <th>Core Function &amp; Static</th>
+          <th>Core Function &amp; Status</th>
           <th>System Requirements &amp; Actions</th>
           <th>Similar to</th>
         </tr>
@@ -40,7 +40,7 @@
           <td>3</td>
           <td>Final WG Draft</td>
 	  <td>Technological core is <strong>frozen</strong>. No asymmetric late changes allowed.</td>
-          <td>Requires formal Working Group Last Call (WGLC) completion. Last chance for technical changes.</td>
+          <td>Requires formal Working Group Last Call completion. Last chance for technical changes.</td>
           <td>ISO Final Committee Draft</td>
         </tr>
         <tr>
@@ -54,7 +54,7 @@
           <td>5</td>
           <td>IETF Consensus</td>
           <td>Last Call and global validation of interoperability. Static review only.</td>
-          <td>Requires completion of IETF-wide Last Call. Static validation only; any technical error forces drop to Level 1.</td>
+          <td>Requires completion of IETF Last Call. Static validation only; any technical error forces drop to State 2.</td>
           <td>ISO Final Draft International Standard</td>
         </tr>
         <tr>
@@ -66,35 +66,57 @@
         </tr>
       </tbody>
     </table>
-    <t>On complex and possibly difficult to consider topics according to <xref target="I-D.ietf-procon-2026bis" /> the IESG MAY consider consultig the IAB. 
+    <t>On complex and possibly difficult to consider topics according to <xref target="I-D.ietf-procon-2026bis" /> the IESG <bcp14>MAY</bcp14> consider consulting the IAB. 
      However, in the event of collevtive recusal the duty of the IESG is to forward the document to the IAB.</t> 
-  <t>If no fitting Working Group exists, the responsible Area Review Team or Directorate is requested to perform Early and Final Reviews.</t>
+  <t>If no fitting Working Group exists, the responsible Area Review Team or Directorate is requested to perform Early and pre-Last Call Reviews, 
+    if applicable the pre-Last Call (including IETF Last Call) Reviews <bcp14>MUST</bcp14> be done by a non-conflicted Area Director.</t>
   <t>Any kind of Process Variance requires the explicit authorization of the IESG or, if requested by it, of the IAB. A process variance can
   only be granted upon an exact description of it and its requirements.</t>
   <section anchor="sect-4-1">
   <name>State Transitions</name>
     <ol>
-      <li><t>On State 1 -> 2 transition the Working Group has full control of the document, if the draft author is not the appointed editor.</t></li>
-      <li><t>On State 2 -> 3 transition the 14-day Working Group Last Call <bcp14>SHALL</bcp14> be immidiately initiated.</t></li>
       <li>
-      	<t><strong>Tarnsition to State 4: Area Consensus</strong></t>
-        <ol>
+        <t><strong>Transition to State 2: Working Group Adoption</strong></t>
+        <ol type="a">
+      	  <li>	
+      	    <t>The Working Group gains full control of the document, if the draft author is not the appointed editor.</t>
+          </li>
+       	  <li>
+      	    <t>Documents that failed a  Last Call are sent back here, for update.</t>
+      	  </li>
+        </ol>
+      </li>
+      <li>
+	<t><strong>Transition to State 3: Working Group Last Call</strong></t>
+        <ol type="a">
+          <li>
+            <t>The main authors and/or document editors are requested to reach rough consensus on initiating the Working Group Last Call.</t>
+          </li>
+          <li>
+            <t>If the rough consensus on initiating the Last Call is reached, the Chairs are <bcp14>REQUIRED</bcp14> to do so immediately, setting a duration of 14 days.</t>
+          </li>
+        </ol>
+      </li>
+      <li>
+      	<t><strong>Transition to State 4: Area Consensus</strong></t>
+        <ol type="a">
           <li><t><strong>Regular Path (with Working Group Consensus)</strong></t>
-            <t>On transition, the responsible Area Director is requested to 
+            <t>On transition, a non-conflicted  Area Director is requested to 
             perform a pre-Area Last Call Review and to initiate an Area Last Call subsequently.</t></li>
           <li><t><strong>AD-Sponsored Path:</strong></t>
-       	    <t>Drafts coming from State 1 will be injected here directly, bypassing the Working Group states.</t></li>
+       	    <t>Drafts originating from State 1 will be injected here directly, bypassing the Working Group states.</t></li>
       	</ol>
       </li>
       <li>
         <t><strong>Transition to Stage 5: IETF Consensus</strong></t>
-      	<t>On reachin Area Consensus this document <bcp14>SHALL</bcp14> be immidiately forwarded to the IESG. 
+      	<t>On reaching Area Consensus this document <bcp14>SHALL</bcp14> be immidiately forwarded to the IESG. 
       	Which is <bcp14>REQUIRED</bcp14> to initiate:</t>
-        <ol>
+        <ol type="a">
        	  <li><t>a immidiate pre IETF Last Call Review, which <bcp14>MUST NOT</bcp14> be done by the Area Director
-      		  who has done the pre Area Last Call Review, a external entity <bcp14>SHALL</bcp14> be prefered.</t></li>
+      		  who has done the pre Area Last Call Review, a external entity <bcp14>SHALL</bcp14> be preffered.</t></li>
       	  <li><t>Subsequently to this review a immidiate IETF Last Call <bcp14>MUST</bcp14> take place within five business days.</t></li>
         </ol>
+        <t>The Best Current Practice approval process starts here.</t>
       </li>
       <li><t><strong>Transition to State 6: Publication Approval</strong></t>
 	  <t>Upon reaching IETF consensus, the IESG is <bcp14>REQUIRED</bcp14> to forward the document in consent to the
