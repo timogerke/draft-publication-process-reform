@@ -16,16 +16,16 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Update Core environment
         run: |
-          sudo apt-get -q update
-          sudo apt-get -qy  upgrade
-          sudo apt-get -qy install xml2rfc weasyprint
+          sudo apt-get -q update >/dev/null
+          sudo apt-get -qy  upgrade >/dev/null
+          sudo apt-get -qy install xml2rfc weasyprint >/dev/null
 
       - name: Checkout Repository
         uses: actions/checkout@v7
