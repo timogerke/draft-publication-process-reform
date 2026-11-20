@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <rewriteSystem systemIdStartString="https://bib.ietf.org/public/rfc/bibxml/" rewritePrefix="file:///home/tgerke/git/publication-process-reform/.cache/bibxml/"/>
+  <rewriteSystem systemIdStartString="https://bib.ietf.org/public/rfc/bibxml3/" rewritePrefix="file:///home/tgerke/git/publication-process-reform/.cache/bibxml/"/>
+  <rewriteSystem systemIdStartString="https://bib.ietf.org/public/rfc/bibxml9/" rewritePrefix="file:///home/tgerke/git/publication-process-reform/.cache/bibxml/"/>
+</catalog>

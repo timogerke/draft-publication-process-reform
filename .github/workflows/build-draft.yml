@@ -2,9 +2,14 @@ name: CI
 
 env: 
   DRAFT_NAME: draft-gerke-publication-process-reform
+  XML_CATALOG_FILES: "${{github.workspace}}/catalog.xml /etc/xml/catalog"
+  bib_uri: https://bib.ietf.org/public/rfc/
+  bcp_ref: bibxml9/reference
+  id_ref: bibxml3/reference.I-D
+  rfc_ref: bibxml/reference
 
 # Controls when the workflow will run
-on:
+on :
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -20,12 +25,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+
       - name: Update Core environment
         run: |
           sudo apt-get -q update >/dev/null
-          sudo apt-get -qy  upgrade >/dev/null
-          sudo apt-get -qy install xml2rfc weasyprint libxml2-utils >/dev/null
+          sudo apt-get -qy install xml2rfc weasyprint libxml2-utils wget >/dev/null
 
       - name: Checkout Repository
         uses: actions/checkout@v7
@@ -41,9 +45,23 @@ jobs:
           TMP=$(python -c "import xml.etree.ElementTree as ET; r = ET.parse('main.xml').getroot(); print(r.attrib['docName'])")
           REVISION=$(echo ${TMP} | sed -e "s/${DRAFT_NAME}-//g")
           echo "REVISION=${REVISION}" >> $GITHUB_ENV
-          
+ 
+      - name: Setup XML Catalog Cache
+        run: |
+          mkdir -p .cache/bibxml
+          for rfc in $rfc_ref.RFC.6359.xml $rfc_ref.RFC.7841.xml $rfc_ref.RFC.7991.xml $rfc_ref.RFC.8788.xml $id_ref.ietf-procon-2026bis.xml $bcp_ref.BCP.0014.xml; do
+            wget -nv --user-agent="Mozilla/5.0" -O ".cache/bibxml/$(basename "$rfc")" ${bib_uri}/$rfc
+            sleep 2
+          done
+
       - name: Expand, Cleanup and Compile XML
         run: |
+          export XML_CATALOG_FILES="$PWD/catalog.xml /etc/xml/catalog"
+          rm catalog.xml
+          xmlcatalog --noout --create catalog.xml
+          xmlcatalog --noout --add "rewriteSystem" "https://bib.ietf.org/public/rfc/bibxml/" "file://$PWD/.cache/bibxml/" catalog.xml
+          xmlcatalog --noout --add "rewriteSystem" "https://bib.ietf.org/public/rfc/bibxml3/" "file://$PWD/.cache/bibxml/" catalog.xml
+          xmlcatalog --noout --add "rewriteSystem" "https://bib.ietf.org/public/rfc/bibxml9/" "file://$PWD/.cache/bibxml/" catalog.xml
           xmllint --xinclude --nofixup-base-uris main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
           xml2rfc --v3 --text archive/${DRAFT_NAME}-${REVISION}.xml -o gh-pages/${DRAFT_NAME}-${REVISION}.txt
 
