@@ -5,5 +5,6 @@
     <li><t>30-day timer: A document <bcp14>MUST</bcp14> be finalized within 30 days from entering the AUTH48 or equivalent state.</t></li>
     <li><t>Once the timer has ended, the document <bcp14>SHALL</bcp14> be published.</t></li>
   </ul>
-  <t>With explicit authorization of the IESG, the timer can be extended by maximum of ten business days overall.</t>
+  <t>With explicit authorization of the IESG, the timer can be extended by a maximum of ten business days overall.</t>
+  <t>This provision applies collectively to the entire team of document authors and editors, rather than to each individual separately.</t>
 </section>

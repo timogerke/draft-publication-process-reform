@@ -25,13 +25,10 @@ jobs:
         run: |
           sudo apt-get -q update >/dev/null
           sudo apt-get -qy  upgrade >/dev/null
-          sudo apt-get -qy install xml2rfc weasyprint >/dev/null
+          sudo apt-get -qy install xml2rfc weasyprint libxml2-utils >/dev/null
 
       - name: Checkout Repository
         uses: actions/checkout@v7
-
-      - name: Update local repository (to get Re-run jobs working)
-        run: git pull
 
       # Runs a single command using the runners shell
       - name: Setup Python
@@ -47,8 +44,7 @@ jobs:
           
       - name: Expand, Cleanup and Compile XML
         run: |
-          xml2rfc --expand --allow-local-file-access main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
-          sed -Ei '/<\!DOCTYPE ([[:print:]])*( )?>/d; s/ xml:base="[^"]*"//g' archive/${DRAFT_NAME}-${REVISION}.xml
+          xmllint --xinclude --nofixup-base-uris main.xml -o archive/${DRAFT_NAME}-${REVISION}.xml
           xml2rfc --v3 --text archive/${DRAFT_NAME}-${REVISION}.xml -o gh-pages/${DRAFT_NAME}-${REVISION}.txt
 
       - name: Commit and Push Changes to Repository

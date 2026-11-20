@@ -68,8 +68,10 @@
     </table>
     <t>On complex and possibly difficult to consider topics according to <xref target="I-D.ietf-procon-2026bis" /> the IESG <bcp14>MAY</bcp14> consider consulting the IAB. 
      However, in the event of collevtive recusal the duty of the IESG is to forward the document to the IAB.</t> 
-  <t>If no fitting Working Group exists, the responsible Area Review Team or Directorate is requested to perform Early and pre-Last Call Reviews, 
-    if applicable the pre-Last Call (including IETF Last Call) Reviews <bcp14>MUST</bcp14> be done by a non-conflicted Area Director.</t>
+
+<t>
+	The responsible Area Review Team or Directorate (which need not be limited to the Area in which the document is developed) is <bcp14>REQUIRED</bcp14> to perform all types of reviews. If no fitting Working Group exists across all Areas for an Individual Submission, the Review Team or Directorate of the most relevant Area is responsible and <bcp14>MUST</bcp14> perform these reviews upon the author's request.
+</t>
   <t>Any kind of Process Variance requires the explicit authorization of the IESG or, if requested by it, of the IAB. A process variance can
   only be granted upon an exact description of it and its requirements.</t>
   <section anchor="sect-4-1">
