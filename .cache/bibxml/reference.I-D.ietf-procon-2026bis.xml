@@ -1,0 +1,16 @@
+<reference anchor="I-D.ietf-procon-2026bis" target="https://datatracker.ietf.org/doc/html/draft-ietf-procon-2026bis-12">
+  <front>
+    <title>The Internet Standards Process</title>
+    <author fullname="Rich Salz" initials="R." surname="Salz">
+      <organization>Akamai Technologies</organization>
+    </author>
+    <author fullname="Scott O. Bradner" initials="S. O." surname="Bradner">
+      <organization>Harvard University (retired)</organization>
+    </author>
+    <date day="29" month="October" year="2026"/>
+    <abstract>
+      <t>This memo documents the process used by the Internet community for the standardization of protocols and procedures. It defines the stages in the standardization process, the requirements for moving a document between stages, and the types of documents used during this process. It also addresses the intellectual property rights and copyright issues associated with the standards process. This document obsoletes RFC 2026, RFC 5657, RFC 6410, RFC 7100, RFC 7127, RFC 8789, and RFC 9282. It also includes the changes from RFC 7475. If this document and [_2418bis] are published as RFCs, then taken together the two of them make RFC 7475 obsolete.</t>
+    </abstract>
+  </front>
+  <seriesInfo name="Internet-Draft" value="draft-ietf-procon-2026bis-12"/>
+</reference>
