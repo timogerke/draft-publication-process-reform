@@ -15,3 +15,5 @@ draft*.pdf
 !gh-pages/*
 *.old
 *.old.xml
+.cache
+catalog.xml
