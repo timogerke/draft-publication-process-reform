@@ -49,7 +49,7 @@ jobs:
       - name: Setup XML Catalog Cache
         run: |
           mkdir -p .cache/bibxml
-          for rfc in $rfc_ref.RFC.6359.xml $rfc_ref.RFC.7841.xml $rfc_ref.RFC.7991.xml $rfc_ref.RFC.8788.xml $id_ref.ietf-procon-2026bis.xml $bcp_ref.BCP.0014.xml; do
+          for rfc in $rfc_ref.RFC.6359.xml $rfc_ref.RFC.7841.xml $rfc_ref.RFC.8788.xml $id_ref.ietf-procon-2026bis.xml $bcp_ref.BCP.0014.xml; do
             wget -nv --user-agent="Mozilla/5.0" -O ".cache/bibxml/$(basename "$rfc")" ${bib_uri}/$rfc
             sleep 2
           done
