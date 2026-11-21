@@ -4,9 +4,9 @@
 
 Individual Submission                                      T. Gerke, Ed.
 Internet-Draft                                               Independent
-Updates: 6359, 7841 (if approved)                       18 November 2026
+Updates: 6359, 7841 (if approved)                       21 November 2026
 Intended status: Best Current Practice                                  
-Expires: 22 May 2027
+Expires: 25 May 2027
 
 
   Publication Process Reform to prevent misuse of AUTH48 or equivalent
@@ -43,7 +43,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 May 2027.
+   This Internet-Draft will expire on 25 May 2027.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 1]
+Gerke                      Expires 25 May 2027                  [Page 1]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 2]
+Gerke                      Expires 25 May 2027                  [Page 2]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -165,7 +165,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 3]
+Gerke                      Expires 25 May 2027                  [Page 3]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -221,7 +221,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 4]
+Gerke                      Expires 25 May 2027                  [Page 4]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -277,7 +277,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 5]
+Gerke                      Expires 25 May 2027                  [Page 5]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -333,7 +333,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 6]
+Gerke                      Expires 25 May 2027                  [Page 6]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -389,7 +389,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 7]
+Gerke                      Expires 25 May 2027                  [Page 7]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -445,7 +445,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 8]
+Gerke                      Expires 25 May 2027                  [Page 8]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -501,7 +501,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                  [Page 9]
+Gerke                      Expires 25 May 2027                  [Page 9]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -557,7 +557,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                 [Page 10]
+Gerke                      Expires 25 May 2027                 [Page 10]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -613,7 +613,7 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                 [Page 11]
+Gerke                      Expires 25 May 2027                 [Page 11]
 
 Internet-Draft         Publication Process Reform          November 2026
 
@@ -669,14 +669,10 @@ Internet-Draft         Publication Process Reform          November 2026
 
 
 
-Gerke                      Expires 22 May 2027                 [Page 12]
+Gerke                      Expires 25 May 2027                 [Page 12]
 
 Internet-Draft         Publication Process Reform          November 2026
 
-
-   [RFC7991]  Hoffman, P., "The "xml2rfc" Version 3 Vocabulary",
-              RFC 7991, DOI 10.17487/RFC7991, December 2016,
-              <https://www.rfc-editor.org/info/rfc7991>.
 
    [RFC8788]  Leiba, B., "Eligibility for the 2020-2021 Nominating
               Committee", RFC 8788, DOI 10.17487/RFC8788, May 2020,
@@ -719,17 +715,6 @@ Appendix B.  Implementation Notes (informative)
 
            b.  *Dual-Key Conflict Escalation*
 
-
-
-
-
-
-
-Gerke                      Expires 22 May 2027                 [Page 13]
-
-Internet-Draft         Publication Process Reform          November 2026
-
-
                Once a conflict is flagged, the system MUST hold all
                state transitions pending formal approval from both a
                non-conflicted Co-Chair and a non-conflicted Co-AD.  This
@@ -737,6 +722,13 @@ Internet-Draft         Publication Process Reform          November 2026
                window.
 
        3.  *Last Call Control and State Interlocking for Section 2.3*
+
+
+
+Gerke                      Expires 25 May 2027                 [Page 13]
+
+Internet-Draft         Publication Process Reform          November 2026
+
 
            The Datatracker validation engine MUST programmatically
            restrict the initiation of Last Calls within a Working Group
@@ -779,13 +771,6 @@ Internet-Draft         Publication Process Reform          November 2026
                email headers of the reviewer, removing the name field
                entirely from all public logs and transaction views.
 
-
-
-Gerke                      Expires 22 May 2027                 [Page 14]
-
-Internet-Draft         Publication Process Reform          November 2026
-
-
            b.  *Access Rights Reinstatement*
 
                Input and approval rights MUST be immediately reinstated
@@ -793,6 +778,13 @@ Internet-Draft         Publication Process Reform          November 2026
                process transitions to either a validated process
                variance path or an official consultation states as
                defined in Section 4.
+
+
+
+Gerke                      Expires 25 May 2027                 [Page 14]
+
+Internet-Draft         Publication Process Reform          November 2026
+
 
            c.  *Automated Document Unfreeze*
 
@@ -831,17 +823,6 @@ Appendix C.  Changes
       process-reform-03 to -06):* Removed redundant timer rules in
       Section 3.1 and resolved logical ambiguities in Sections 2 and 4.
 
-
-
-
-
-
-
-Gerke                      Expires 22 May 2027                 [Page 15]
-
-Internet-Draft         Publication Process Reform          November 2026
-
-
    *  *Datatracker Scope (RFC 6359) and Implementation Notes (draft-
       gerke-publication-process-reform-07):* Added [RFC6359] to the
       updates attribute, added Section 1.3 (Relationship to RFC 6359),
@@ -853,6 +834,13 @@ Internet-Draft         Publication Process Reform          November 2026
       (The 6-Level Publication Pipeline), aligned Appendix B
       (Implementation Notes) accordingly, and removed textual
       redundancies.
+
+
+
+Gerke                      Expires 25 May 2027                 [Page 15]
+
+Internet-Draft         Publication Process Reform          November 2026
+
 
 Appendix D.  Notes to the RPC
 
@@ -893,4 +881,16 @@ Author's Address
 
 
 
-Gerke                      Expires 22 May 2027                 [Page 16]
+
+
+
+
+
+
+
+
+
+
+
+
+Gerke                      Expires 25 May 2027                 [Page 16]
